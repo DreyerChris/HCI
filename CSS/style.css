@@ -1,3 +1,104 @@
-body{
-    
+body.main{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+div#navbar{
+    position: fixed;
+    top: 0px;
+    height: 120px;
+    background-color: #FF4E00;
+    width: 100%;
+    line-height: 120px;
+    margin: 0;
+}
+
+#navbar #navbartext{
+    color: white;
+    text-align: left;
+    font-size: 40px;
+}
+
+div#carouselmock{
+    position: relative;
+    margin-top: 120px;
+    text-align: center;
+    line-height: 500px;
+    color: white;
+    height: 500px;
+    width: 100%;
+    background-color: #555;
+}
+
+div#loginbar{
+    height: 120px;
+    background-color: #FF4E00;
+}
+
+div#quicklinks{
+    height: 230px;
+}
+
+div#imagescrolllistmock{
+    text-align: center;
+    line-height: 330px;
+    color: white;
+    height: 330px;
+    width: 100%;
+    background-color: #555;
+}
+
+div#loginlink{
+    text-align: center;
+}
+
+div#signuplink{
+    text-align: center;
+}
+
+button.loginlinkbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ff4d00;
+  font-size: 40px;
+  background: #ffffff;
+  padding: 10px 100px 10px 100px;
+  text-decoration: none;
+    height: 80px;
+    margin-top: 20px;
+    width: 415px;
+    border: none;
+}
+
+button.loginlinkbtn:hover {
+  background: #ff4d00;
+  text-decoration: none;
+    color: white;
+    border: none;
+}
+
+button.signuplinkbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #fff;
+  font-size: 40px;
+  background: transparent;
+    border: 8px solid white;
+  padding: 10px 100px 10px 100px;
+  text-decoration: none;
+    height: 80px;
+    margin-top: 20px;
+    width: 415px;
+}
+
+button.signuplinkbtn:hover {
+  background: #fff;
+  text-decoration: none;
+    color: #ff4e00;
+    border: none;
+    border: 8px solid #ff4e00;
 }
