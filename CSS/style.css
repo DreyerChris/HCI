@@ -1,3 +1,12 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 body.main{
     background-color: black;
     overflow-x: hidden;
@@ -19,7 +28,7 @@ div#navbar{
     font-size: 40px;
 }
 
-div#carouselmock{
+div#carouselcontainer{
     position: relative;
     margin-top: 120px;
     text-align: center;
@@ -31,21 +40,25 @@ div#carouselmock{
 }
 
 div#loginbar{
-    height: 120px;
     background-color: #FF4E00;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 div#quicklinks{
-    height: 230px;
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 60px;
 }
 
-div#imagescrolllistmock{
+div#imagescrolllist{
+    overflow:auto;
     text-align: center;
-    line-height: 330px;
     color: white;
-    height: 330px;
     width: 100%;
-    background-color: #555;
+    background-color: transparent;
+    white-space: nowrap;
 }
 
 div#loginlink{
@@ -67,7 +80,6 @@ button.loginlinkbtn {
   padding: 10px 100px 10px 100px;
   text-decoration: none;
     height: 80px;
-    margin-top: 20px;
     width: 415px;
     border: none;
 }
@@ -87,11 +99,10 @@ button.signuplinkbtn {
   color: #fff;
   font-size: 40px;
   background: transparent;
-    border: 8px solid white;
-  padding: 10px 100px 10px 100px;
+    border: 6px solid white;
+  padding: 0px 100px 0px 100px;
   text-decoration: none;
     height: 80px;
-    margin-top: 20px;
     width: 415px;
 }
 
@@ -100,5 +111,56 @@ button.signuplinkbtn:hover {
   text-decoration: none;
     color: #ff4e00;
     border: none;
-    border: 8px solid #ff4e00;
+    border: 6px solid #ff4e00;
+}
+
+#myCarousel{
+    width: 100%;
+}
+
+ol.carousel-indicators{
+    margin-top: 100px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+display: block;
+height: auto;
+max-width: 100%;
+line-height: 1;
+width: 100%; // Add this
+}
+
+button.quicklinkbtn {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #ff4e00;
+  padding: 0px 0px 0px 0px;
+  text-decoration: none;
+    width: 350px;
+    height: 100px;
+    border: none;
+    margin-top: 30px;
+    font-size: 40px;
+}
+
+button.quicklinkbtn:hover {
+  background: #c73800;
+  text-decoration: none;
+}
+
+div#quicklink{
+    text-align: center;
+}
+
+img#imagescrolllistimage{
+    width: 420px;
+    height: 100%;
+}
+
+#imagescrolllistimagecontainer{
+    display: inline-block;
 }
