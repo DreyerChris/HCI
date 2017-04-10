@@ -12,6 +12,11 @@ body.main{
     overflow-x: hidden;
 }
 
+body.white{
+    background-color: #fefefe;
+    overflow-x: hidden;
+}
+
 div#navbar{
     position: fixed;
     top: 0px;
@@ -163,4 +168,40 @@ img#imagescrolllistimage{
 
 #imagescrolllistimagecontainer{
     display: inline-block;
+}
+
+h1#orangeheading{
+    font-size: 40px;
+    color: #ff4e00;
+    position: relative;
+}
+
+div#buyticketsheading{
+    text-align: center;
+    margin-top: 150px;
+}
+
+div#loginheading{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#selects{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: #ff4e00;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#selects select:focus{
+    border: 0px solid white;
+}
+
+#numetrosocialheader{
+    height: 150px;
+    background-color: black;
 }

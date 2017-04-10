@@ -63,7 +63,7 @@
         <div class="row">
             <div id="loginbar" class="col-xs-12">
                 <div id="loginlink" class="col-xs-6">
-                    <button class="loginlinkbtn">Log In</button>
+                    <a href="login.php"><button class="loginlinkbtn">Log In</button></a>
                 </div>
                 <div id="signuplink" class="col-xs-6">
                     <button class="signuplinkbtn">Sign Up</button>
@@ -74,7 +74,7 @@
             <div id="quicklinks" class="col-xs-12">
                 <div class="row">
                     <div id="quicklink" class="col-xs-6">
-                        <button class="quicklinkbtn">Buy Tickets</button>
+                        <a href="buytickets.php"><button class="quicklinkbtn">Buy Tickets</button></a>
                     </div>
                     <div id="quicklink" class="col-xs-6">
                         <button class="quicklinkbtn">Cinemas</button>
