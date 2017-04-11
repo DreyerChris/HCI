@@ -66,7 +66,7 @@
                     <a href="login.php"><button class="loginlinkbtn">Log In</button></a>
                 </div>
                 <div id="signuplink" class="col-xs-6">
-                    <button class="signuplinkbtn">Sign Up</button>
+                    <a href="signup.php"><button class="signuplinkbtn">Sign Up</button></a>
                 </div>
             </div>
         </div>

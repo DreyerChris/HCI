@@ -14,22 +14,26 @@
     <body class="white">
         <div id="navbar">
             <div id="iconbar" class="col-xs-3"></div>
-            <div class="col-xs-8" id="navbartext">Log In</div>
+            <div class="col-xs-8" id="navbartext">Sign Up</div>
             <div id="closelink" class="col-xs-1"><a href="login.php"><span class="glyphicon glyphicon-remove"></span></a></div>
         </div>
         <div id="numetrosocialheader" class="col-xs-12">
             
         </div>
         <div id="loginheading" class="col-xs-12">
-            <h1 id="orangeheading">Log In</h1>
+            <h1 id="orangeheading">Sign Up</h1>
         </div>
         <form id="loginform">
+            <input type="text" name="username" id="forminput" placeholder="Username"><br>
             <input type="text" name="email" id="forminput" placeholder="Email Address"><br>
-            <input type="password" name="password" placeholder="Password" id="forminput" class="lastinput"><br>
-            <button type="submit" class="quicklinkbtn">Log In</button>
+            <input type="password" name="password" placeholder="Password" id="forminput"><br>
+            <input type="password" name="password2" placeholder="Confirm Password" id="forminput"><br>
+            <input type="text" name="suburb" placeholder="Suburb" id="forminput"><br>
+            <input type="text" name="city" placeholder="City" id="forminput"><br>
+            <input type="number" name="contactnumber" placeholder="Contact Number" id="forminput" class="lastinput"><br>
+            <button type="submit" class="quicklinkbtn">Sign Up</button>
         </form>
         <a href="index.php"><button class="ghostbuttonblack">Cancel</button></a><br>
-        <a id="noaccount" href="signup.php"><span id="blacklink">Don't have an account yet?</span><span id="orangelink"> Sign Up here</span></a>
         <div id="socialfooter">
             <div class="col-xs-4" id="sociallink">
                 <img height="80" width="80" src="Images/Social/facebook.png">

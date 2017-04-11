@@ -15,7 +15,10 @@ body.main{
 body.white{
     background-color: #fefefe;
     overflow-x: hidden;
+    text-align: center;
 }
+
+a{color: white !important}
 
 div#navbar{
     position: fixed;
@@ -111,12 +114,33 @@ button.signuplinkbtn {
     width: 415px;
 }
 
+button.ghostbuttonblack {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: black;
+  font-size: 40px;
+  background: transparent;
+    border: none;
+  padding: 0px 100px 0px 100px;
+  text-decoration: none;
+    height: 80px;
+    width: 415px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 button.signuplinkbtn:hover {
   background: #fff;
   text-decoration: none;
     color: #ff4e00;
     border: none;
-    border: 6px solid #ff4e00;
+    border: 6px solid white;
+}
+
+#loginform{
+    text-align: center;
 }
 
 #myCarousel{
@@ -204,4 +228,62 @@ div#loginheading{
 #numetrosocialheader{
     height: 150px;
     background-color: black;
+    position: relative;
+    margin-top: 120px;
 }
+
+#loginform{
+}
+
+#forminput{
+    font-size: 30px;
+    border: none;
+    border-bottom: 6px solid #ff4e00;
+    width: 500px;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    transition: all 0.3s;
+}
+
+#forminput:focus{
+    border: none;
+    border-bottom: 8px solid #ff4e00;
+    width: 600px;
+}
+
+a#noaccount{
+    color: black;
+    font-size: 30px;
+}
+
+a#noaccount:focus{
+    text-decoration: none !important;
+}
+
+span#orangelink{
+    color: #ff4e00;
+}
+
+span#blacklink{
+    color: black;
+}
+
+#socialfooter{
+    position: absolute;
+    bottom: 0px;
+    height: 120px;
+    background-color: black;
+    width: 100%;
+}
+
+#sociallink{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#closelink{
+    font-size: 50px;
+    color: white;
+}
+
