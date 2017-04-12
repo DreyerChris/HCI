@@ -77,7 +77,7 @@
                         <a href="buytickets.php"><button class="quicklinkbtn">Buy Tickets</button></a>
                     </div>
                     <div id="quicklink" class="col-xs-6">
-                        <button class="quicklinkbtn">Cinemas</button>
+                        <a href="cinemas.php"><button class="quicklinkbtn">Cinemas</button></a>
                     </div>
                 </div>
                 <div class="row">

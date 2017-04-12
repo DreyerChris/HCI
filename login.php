@@ -15,7 +15,7 @@
         <div id="navbar">
             <div id="iconbar" class="col-xs-3"></div>
             <div class="col-xs-8" id="navbartext">Log In</div>
-            <div id="closelink" class="col-xs-1"><a href="login.php"><span class="glyphicon glyphicon-remove"></span></a></div>
+            <a href="index.php"><div id="closelink" class="col-xs-1"><span class="glyphicon glyphicon-remove"></span></div></a>
         </div>
         <div id="numetrosocialheader" class="col-xs-12">
             
