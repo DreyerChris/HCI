@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<?php
+if(!empty($_GET))
+{
+    $sortType = $_GET['sortType'];
+}
+else
+{
+    $sortType = "rating";
+}
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "numetro";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+?>
+<html>
+    <head>
+        <title>movies</title>
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/Moviestyle.css"/>
+        <link rel="shortcut icon" href="Images/Favicon/favicon.ico" type="image/ico">
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.min.js"
+          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+          crossorigin="anonymous"></script>
+        <script src="JS/script.js"></script>
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+
+    <body class="black">
+        <div id="navbar">
+            <div class="col-xs-1" id="burgermenu">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <a href="index.php"><div class="col-xs-1" id="backbtn"><span class="glyphicon glyphicon-menu-left"></span></div></a>
+            <div class="col-xs-9" id="navbartext">NuMetro</div>
+            <div id="option"><span class="glyphicon glyphicon-option-vertical"></span></div>
+        </div>
+
+    <div class="row">
+        <div class="col-xs-1"></div>
+        <div class="col-xs-6">
+            <div id="cinemasearchbar">
+                <form>
+                    <input type="text" name="moviesearch" id="whiteborderinput" placeholder="Search for movie...">
+                </form>
+            </div>
+        </div> 
+
+        <div class="col-xs-2"></div>
+
+        <div class="col-xs-1">
+            <div id="moviesorting">
+                <form>
+                    <input list="sorting" class="dropdown-toggle" name="moviesorting" id="redborderinput" placeholder="Top Rated">
+                    <datalist id="sorting">
+                        <option id="redborderinput" value="Alphabetical">
+                        <option id="redborderinput" value="Newest first">
+                        <option id="redborderinput" value="Oldest first">
+                        <option id="redborderinput" value="Top Rated">
+                        <option id="redborderinput" value="Age restriction">
+                    </datalist>
+                </form>
+            </div>
+        </div>  
+    </div>
+
+    <?php
+    $sql = 'SELECT * FROM movie ORDER BY '.$sortType.' DESC';
+    $result = $conn->query($sql);
+
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+            echo '<div class="row"';
+                echo'<div class="col-xs-12" id="movieposter">';
+
+                    echo'<a href="moviepage.php?id='.$row["nameMovie"].'">';
+                    echo'<img class="movie" src="Images/Carousel/'.$row["image"].'">';
+                    echo '</a>';
+
+                    echo'<div class"movieInfo">';
+                        echo '<div>';
+                            echo'<h3>'.$row["nameMovie"].'</h3>';
+                        echo '</div>';
+                    echo'</div>';
+                
+                echo'</div>';
+            echo'</div>';
+            echo '<div class="row"';
+                echo'<div class="col-xs-12" id="moviedivider"></div>';
+            echo'</div>';
+        }
+    }
+
+    $conn->close();
+    ?>
+    </body>
+</html>
