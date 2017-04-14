@@ -4,7 +4,8 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    background-color: black;
 }
 
 body.main{
@@ -28,7 +29,13 @@ div#navbar{
     width: 100%;
     line-height: 120px;
     margin: 0;
-    z-index: 5;
+    z-index: 1;
+}
+
+#backbtn{
+    color: white;
+    font-size: 40px;
+    text-align: left;
 }
 
 #navbar #navbartext{
@@ -596,4 +603,146 @@ dic#snackprice{
 
 .modal-footer{
     text-align: center;
+}
+
+.container {
+    margin-top: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon-bar{
+    position: fixed;
+    z-index: 7;
+    top: 35px;
+    left: 40px;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 60px;
+    height: 7px;
+    background-color: white;
+    margin: 7px 0;
+    transition: 0.4s;
+    z-index: 7;
+}
+
+.icon-bar .change{
+    position: fixed;
+    z-index: 7;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-11px, 6px) ;
+    transform: rotate(-45deg) translate(-11px, 12px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+#menu{
+    width: 75%;
+    height: 100%;
+    position: fixed;
+    background-color: black;
+    z-index: -1;
+}
+
+#menulinkicon{
+    background-color: transparent;
+    text-align: left;
+    height: 60px;
+    line-height: 60px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+#menulinklink{
+    font-size: 40px;
+    color: white;
+}
+
+#orangemenulink{
+    color: #ff4e00;
+    font-size: 55px;
+}
+
+#menurowfirst{
+    margin-top: 200px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#menurow{
+    margin-top: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+#menulink{
+    color: white;
+}
+
+#numetrologo{
+    margin-top: 180px;
+    background-color: dimgrey;
+    position: relative;
+    height: 200px;
+}
+
+#logosubtext{
+    font-size: 35px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#socialmedialinksheading{
+    font-size: 35px;
+    font-weight: 100;
+    margin-top: 250px;
+    margin-bottom: 50px;
+}
+
+#facebookbar{
+    height: 150px;
+    background-color: #3B5998;
+    font-size: 40px;
+    color: white;
+    line-height: 150px;
+    font-weight: 200;
+}
+
+#twitterbar{
+    height: 150px;
+    background-color: #00B6F1;
+    font-size: 40px;
+    color: white;
+    line-height: 150px;
+    font-weight: 200;
+}
+
+#instagrambar{
+    height: 150px;
+    background-color: #FF0093;
+    font-size: 40px;
+    color: white;
+    line-height: 150px;
+    font-weight: 200;
+}
+
+#versionnumber{
+    font-size: 25px;
+    font-weight: 300;
+    color: #ff4e00;
+    margin-top: 200px;
 }
