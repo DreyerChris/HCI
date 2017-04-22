@@ -31,6 +31,7 @@
         </div>
         <div class="col-xs-9" id="navbartext">Contact Us</div>
     </div>
+    </div>
     <br>
     <br>
     <br>
