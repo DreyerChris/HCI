@@ -78,15 +78,15 @@
                 <div  class="col-xs-6"><input type="radio" name="regarding" value="other"> Other</div><br>
             </div>
 
-            <div  class="col-xs-1 "></div>
-                    <div  class="col-xs-10 ">
+            <div  class="col-xs-0 "></div>
+                    <div  class="col-xs-12 ">
                         <select class="form-control" id="cinimaInput">
                         <option>Menlyn Park</option>
                         <option>Boardwalk</option>
                         <option>Canal Walk</option>
                     </select>
                     </div>
-            <div  class="col-xs-1 "></div>
+            <div  class="col-xs-0 "></div>
             <br>
              <div class="row"><div  class="col-xs-12 "><h2 class="orange">Your details</h2></div></div>
              <div class="row">
