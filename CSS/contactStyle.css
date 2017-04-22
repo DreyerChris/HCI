@@ -1,0 +1,62 @@
+body.contact{
+    background-color: black;
+    float: left;
+    
+}
+
+.nuMetrocontact{
+    text-align: center;
+    width: 60%;
+    height: 120px;
+    position: absolute;
+}
+
+.nuMetrocontact img{
+    display: block;
+    margin: 0 auto;
+}
+
+div.contactWhite
+{
+    background-color: white;
+    width: 100%;
+    position: relative;
+    font-size: 24px;
+}
+
+div.contactBlack
+{
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: absolute;
+    font-size: 30px;
+    
+}
+
+a.number {
+    color: #FF4E00;
+}
+
+#cinimaInput{
+    background-color: white;
+    border:none;
+    height: 60px;
+    width: 80%;
+    color: #FF4E00;
+    font-size: 35px;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+h2.orange
+{
+    color: #FF4E00;
+}
+
+button.contactus{
+    background-color: #FF4E00;
+    height: 60px;
+    width: 200px;
+    font-size: 35px;
+}
