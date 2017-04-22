@@ -1,6 +1,7 @@
 body.contact{
     background-color: black;
     float: left;
+    position: relative;
     
 }
 
@@ -22,6 +23,7 @@ div.contactWhite
     width: 100%;
     position: relative;
     font-size: 24px;
+    text-align: center;
 }
 
 div.contactBlack
@@ -34,7 +36,7 @@ div.contactBlack
     
 }
 
-a.number {
+div.number {
     color: #FF4E00;
 }
 
