@@ -103,8 +103,8 @@
             <div  class="col-xs-1 "></div>
             <br>
             <div class="row">
-                <div  class="col-xs-4 "></div>
-                <div  class="col-xs-4 "><button type="submit" class="btn contactus">Contact Us</button></div>
+                <div  class="col-xs-5 "></div>
+                <div  class="col-xs-3 "><button type="submit" class="btn contactus">Contact Us</button></div>
                 <div  class="col-xs-4 "></div>
             </div>
         </form>
