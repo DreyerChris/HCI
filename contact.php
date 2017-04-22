@@ -40,13 +40,18 @@
     <div class="row">     
         <div  class="col-xs-12 ">
             <div class="contactWhite">
-                   
-                    At Nu Metro, we always want you to have a great
-                    time when you're at one of our cinemas, and likewise 
-                    when you're browsing our app. If you need to give 
-                    us a call, the number is 0861-CINEMA 
-                    <a class="number" src="">(+27 86 124 6362)</a> 
-                    or contacts us using the form below:
+                   <div>
+                    At Nu Metro, we always want you to have a great<br>
+                    time when you're at one of our cinemas, and likewise <br>
+                    when you're browsing our app. If you need to give <br>
+                    us a call, the number is 0861-CINEMA <br>
+                    </div>
+                    <div class="number">
+                    (+27 86 124 6362) <br>
+                    </div>
+                    <div>
+                    or contacts us using the form below:<br>
+                    </div>
             </div>
         </div>
     </div>
