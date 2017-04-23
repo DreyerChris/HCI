@@ -57,15 +57,13 @@ if ($conn->connect_error) {
                         echo '<div class="row"';
                             echo'<div class="col-xs-12" id="movieposter">';
 
-                                echo'<a href="moviepage.php?id='.$row["nameMovie"].'">';
-                                echo'<img class="movie" src="Images/Carousel/'.$row["image"].'">';
-                                echo '</a>';
+                                echo'<iframe width="100%" height="500" src="https://www.youtube.com/embed/h9y6oPka3us" frameborder="0" allowfullscreen></iframe>';
                             echo'</div>';
                      echo'</div>';
 
-                     echo'<div class="col-xs-6">';
+                     echo'<div id="moviepageinfo" class="col-xs-12">';
                         echo'<div>';
-                             echo'<h3>'.$row["nameMovie"].'</h3>';
+                             echo'<h3 id="moviepagetitle">'.$row["nameMovie"].'</h3><div id="agerestrictionmoviepage">PG V</div><div id="genre">Animation</div><div id="favouritecontainer"><span id="favourite" class="glyphicon glyphicon-heart-empty></span>';
                                 echo'<dl>';
                              echo '<dt>Director: '.$row["Director"].'</dt>';
                              echo '<dt>Music: '.$row["Music"].'</dt>';

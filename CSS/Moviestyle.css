@@ -32,11 +32,8 @@ redborderinput::-webkit-input-placeholder{
 }
 
 #movieposter{
-    height: 600px;
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
+    height: 500px;
+    position: relative;
 }
 
 #moviedivider{
@@ -51,23 +48,110 @@ img.movie{
 /*
     het getry om di goed slightly transparent te maak soos in di designs
 */
-.movieInfo{
- position: relative;
-}
-
-
-.movieInfo::after{
-  z-index: 10;
+.movieInfocontainer{
+ position:absolute;
+    width: 100%;
+    bottom: 0;
+    height: 250px;
+    background-color: red;
+    z-index: 10;
   display: block;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(100, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
 }
 
 div.white{
     background-color: white;
     text-align: center;
+}
+
+.movieInfo #movietitle{
+    color: white;
+    font-size: 40px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+
+.movieInfo #movieinfoheader{
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+    font-weight: 300;
+    margin-top: 2px;
+}
+
+.movieInfo #movieinfocontent{
+    font-weight: 100;
+    color: #aaa;
+}
+
+div.movierating{
+    margin-top: 70px;
+    text-align: right;
+}
+
+#movieratingtext{
+    color: white;
+    font-size: 50px;
+    padding: 0px;
+    text-align: left;
+}
+
+#ratingstar{
+    font-size: 50px;
+    color: white;
+}
+
+#ratingstars{
+    margin-top: 15px;
+    padding-right: 30px;
+}
+
+#agerestriction{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 50px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#agerestrictionmoviepage{
+    border: 2px solid white;
+    border-radius: 5px;
+    margin-left: 20px;
+    display: inline;
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#moviepagetitle{
+    color: #ff4e00;
+    font-size: 45px;
+    display: inline;
+}
+
+#moviepageinfo{
+    padding: 25px;
+}
+
+#genre{
+    font-size: 30px;
+    color: white;
+    display: inline;
+    margin-left: 20px;
+}
+
+#favouritecontainer{
+    color: white;
+    font-size: 40px;
 }

@@ -120,17 +120,32 @@ if ($conn->connect_error) {
                     echo'<a href="moviepage.php?id='.$row["nameMovie"].'">';
                     echo'<img class="movie" src="Images/Carousel/'.$row["image"].'">';
                     echo '</a>';
-
-                    echo'<div class"movieInfo">';
-                        echo '<div>';
-                            echo'<h3>'.$row["nameMovie"].'</h3>';
+            
+                    echo'<div class="movieInfocontainer"><div class="movieInfo col-xs-8">';
+                        echo '<div class="row">';
+                            echo'<h3 id="movietitle">'.$row["nameMovie"].'</h3>';
+                        echo '</div>';
+                        echo '<div class="row">';
+                            echo'<h3 id="movieinfoheader">Running time: <span id="movieinfocontent">1hr 30min</span></h3>';
+                        echo '</div>';
+                        echo '<div class="row">';
+                            echo'<h3 id="movieinfoheader">Release date: <span id="movieinfocontent">14 February</span></h3>';
+                        echo '</div>';
+                        echo '<div class="row">';
+                            echo'<div id="agerestriction">PG V</div>';
                         echo '</div>';
                     echo'</div>';
+                    echo'<div class="movierating col-xs-4">';
+                        echo'<div class="row">';
+                            echo'<div class="col-xs-5 col-xs-offset-2"><img height="70" width="120" src="Images/IMDB/IMDB_Logo.png"/></div>';
+                            echo'<div id="movieratingtext" class="col-xs-5">8/10</div>';
+                        echo'</div>';
+                        echo'<div class="row">';
+                            echo'<div id="ratingstars" class="col-xs-12"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star-empty"></span></div>';
+                        echo'</div>';
+                    echo'</div>';
                 
-                echo'</div>';
-            echo'</div>';
-            echo '<div class="row"';
-                echo'<div class="col-xs-12" id="moviedivider"></div>';
+                echo'</div></div>';
             echo'</div>';
         }
     }

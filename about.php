@@ -4,6 +4,7 @@
         <title>About Us</title>
         <link rel="stylesheet" href="CSS/style.css"/>
         <link rel="shortcut icon" href="Images/Favicon/favicon.ico" type="image/ico">
+        <script src="https://use.fontawesome.com/727ae44ffb.js"></script>
         <script
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -14,7 +15,7 @@
     </head>
     <body class="white">
         <div id="navbar">
-            <div class="col-xs-2" id="backbtn"><span class="glyphicon glyphicon-menu-left"></span></div>
+            <a href="index.php"><div class="col-xs-2" id="backbtn"><span class="glyphicon glyphicon-menu-left"></span></div></a>
             <div class="col-xs-10" id="navbartext">About Us</div>
         </div>
         <div class="row">
@@ -35,13 +36,16 @@
             </div>
         </div>
         <div id="facebookbar" class="col-xs-12">
-            Like us on Facebook!
+            <div id="socialmediaicon" class="col-xs-1"><span class="fa fa-facebook fa-lg"></span></div>
+            <div id="socialmediatext" class="col-xs-11">Like us on Facebook!</div>
         </div>
         <div id="twitterbar" class="col-xs-12">
-            Follow us on Twitter!
+            <div id="socialmediaicon" class="col-xs-1"><span class="fa fa-twitter fa-lg"></span></div>
+            <div id="socialmediatext" class="col-xs-11">Follow us on Twitter!</div>
         </div>
         <div id="instagrambar" class="col-xs-12">
-            Follow us on Instagram!
+            <div id="socialmediaicon" class="col-xs-1"><span class="fa fa-instagram fa-lg"></span></div>
+            <div id="socialmediatext" class="col-xs-11">Follow us on Instagram!</div>
         </div>
         <div id="versionnumber" class="col-xs-12">
             version No 1.0.0

@@ -131,7 +131,7 @@
                 </div>
                 <div class="row">
                     <div id="quicklink" class="col-xs-12">
-                        <button class="quicklinkbtn">Movies</button>
+                        <a href="movies.php"><button class="quicklinkbtn">Movies</button></a>
                     </div>
                 </div>
             </div>
