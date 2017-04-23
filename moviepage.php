@@ -57,13 +57,13 @@ if ($conn->connect_error) {
                         echo '<div class="row"';
                             echo'<div class="col-xs-12" id="movieposter">';
 
-                                echo'<iframe width="100%" height="400" src="https://www.youtube.com/embed/h9y6oPka3us" frameborder="0" allowfullscreen></iframe>';
+                                echo'<iframe width="100%" height="400" src="'.$row["youtube"].'" frameborder="0" allowfullscreen></iframe>';
                             echo'</div>';
                      echo'</div>';
 
                      echo'<div id="moviepageinfo" class="col-xs-12">';
                         echo'<div>';
-                             echo'<h3 id="moviepagetitle">'.$row["nameMovie"].'</h3><div id="agerestrictionmoviepage">PG V</div><div id="genre">Animation</div><div id="favouritecontainer"><span id="favouriteempty" class="glyphicon glyphicon-heart"></span></div>';
+                             echo'<h3 id="moviepagetitle">'.$row["nameMovie"].'</h3><div id="agerestrictionmoviepage">'.$row["ageRestriction"].'</div><div id="genre">'.$row["genre"].'</div><div id="favouritecontainer"><span id="favouriteempty" class="glyphicon glyphicon-heart"></span></div>';
                                 /*echo'<dl>';
                              echo '<dt>Director: '.$row["Director"].'</dt>';
                              echo '<dt>Music: '.$row["Music"].'</dt>';
@@ -82,24 +82,52 @@ if ($conn->connect_error) {
                                     echo'<h3 class="first" id="movieinfoheadermoviepage">Running time: <span id="movieinfocontentmoviepage">'.$row["runningTime"].'</span></h3>';
                                 echo '</div>';
                                 echo '<div class="row">';
-                                    echo'<h3 id="movieinfoheadermoviepage">Release date: <span id="movieinfocontentmoviepage">14 February</span></h3>';
+                                    echo'<h3 id="movieinfoheadermoviepage">Release date: <span id="movieinfocontentmoviepage">'.$row["releaseDate"].'</span></h3>';
                                 echo '</div>';
                             echo '</div>';
                             echo '<div class="col-xs-6">';
-                                echo '<p id="moviedescription"><span id="blurb">Movie blurb.</span><br>' .$row["synopsis"]. '</p>';
+                                echo '<p id="moviedescription"><span id="blurb">'.$row["blurb"].'</span><br>' .$row["synopsis"]. '</p>';
                             echo '</div>';
                         echo '</div>';
                         echo'<div id="movieratingrow" class="row">';
-                            echo'<div class="col-xs-2"><img height="70" width="120" src="Images/IMDB/IMDB_Logo.png"/></div>';
-                            echo'<div id="movieratingtext" class="col-xs-2">8/10</div>';
+                            echo'<div class="col-xs-2"><a href="'.$row["IMDB"].'"><img height="70" width="120" src="Images/IMDB/IMDB_Logo.png"/></div></a>';
+                            echo'<div id="movieratingtext" class="col-xs-2">'.$row["rating"].'/10</div>';
                         echo'</div>';
                         echo'<div class="row">';
                             echo'<div id="ratingstars" class="col-xs-12"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star"><span id="ratingstar" class="glyphicon glyphicon-star-empty"></span></div>';
                         echo'</div>';
                      echo'</div>';
 
-                     echo'<div id="moviedropdowns" class="col-xs-12">dropdowns';
-                        
+                     echo'<div id="moviedropdowns" class="col-xs-12">';
+                    ?>
+                        <div  class="col-xs-12 ">
+                            <div id="selects" class="col-xs-10 col-xs-offset-1">
+                                <select>
+                                    <option>Select Cinema</option>
+                                    <option>Menlyn Park</option>
+                                    <option>Boardwalk</option>
+                                    <option>Canal Walk</option>
+                                </select>
+                            </div>
+                            <div id="selects" class="col-xs-10 col-xs-offset-1">
+                                <select>
+                                    <option>Select Date</option>
+                                    <option>14 April</option>
+                                    <option>15 April</option>
+                                    <option>16 April</option>
+                                </select>
+                            </div>
+                            <div id="selects" class="col-xs-10 col-xs-offset-1">
+                                <select>
+                                    <option>Select Time</option>
+                                    <option>12:00</option>
+                                    <option>15:00</option>
+                                    <option>20:00</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="quicklinkbtn">Choose Seats</button>
+                        </div>
+                    <?php
                      echo'</div>';
                     }
                 }
