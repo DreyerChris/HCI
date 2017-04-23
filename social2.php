@@ -117,18 +117,18 @@
         <div>
          <h1 id="recentsearch">Trending</h1>
                 <a href="moviedetails.php"><div class="moviepic" style="">
-                    <img src="Images/carousel/4.jpg" alt="balsak" class="moviesearchimg"/>
+                    <img src="Images/carousel/4.jpg" alt="non" class="moviesearchimg"/>
                      <h3 style="float:right;padding-left: 20px;" class="smoviename">King Kong</h3>
                 </div></a>
                 <br>
                 <a href="moviedetails.php"><div  class="moviepic" style="">
-                    <img src="Images/carousel/3.jpg" alt="balsak" class="moviesearchimg"/>
+                    <img src="Images/carousel/3.jpg" alt="non" class="moviesearchimg"/>
                      <h3 style="float:right;padding-left: 20px;" class="smoviename">Chips</h3>
                      <br>
                 </div></a>
                 <br>                
                <a href="moviedetails.php"> <div  class="moviepic" style="">
-                    <img src="Images/carousel/2.jpg" alt="balsak" class="moviesearchimg"/>
+                    <img src="Images/carousel/2.jpg" alt="non" class="moviesearchimg"/>
                      <h3 style="float:right;padding-left: 20px;" class="smoviename">Jhon Wick 2</h3>
                 </div></a>
         </div>

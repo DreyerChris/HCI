@@ -905,6 +905,9 @@ padding-top: 20px;
   height:150px;
   width: 150px;
   padding-right: 25px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 #cusername{
   color:white;
@@ -988,6 +991,10 @@ input.form-control{
   width: 300px;
   height: 80px;
   padding-bottom: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
 }
 .moviepic{
     padding-left: 20px;
@@ -1011,6 +1018,9 @@ input.form-control{
 .spfp{
   height:100px;
   width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 .spersonname{
     color:#ff4e00;
