@@ -80,13 +80,13 @@
                     <a href="social1.php"><span class="glyphicon glyphicon-list-alt" style="color:#ff4e00;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social2.php"><span class="glyphicon glyphicon-film"/></a>
+                    <a href="social2.php"><span class="glyphicon glyphicon-film" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social3.php"><span class="glyphicon glyphicon-user"/></a>
+                    <a href="social3.php"><span class="glyphicon glyphicon-user" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social4.php"><span class="glyphicon glyphicon-cog"/></a>
+                    <a href="social4.php"><span class="glyphicon glyphicon-cog" style="color:gray;"/></a>
             </div>
         </div>
         <div id="movietitle">
@@ -100,12 +100,12 @@
             </div>
         </div>
         <div class="movierating">
-            9/10<img src="" alt="stars" class="stars"/><br>
+            9/10<img src="Images/IMDB/IMDB_Logo.png" alt="stars" class="stars"/><br>
             Friends watched: <line style="font-size: 20px;">Pieter Smith and</line><line style="font-size: 30px;color:#ff4e00;"> 3 others</line><br>
             Total watched:<line style="font-size: 30px;color:#ff4e00;">455</line> 
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;color:#ff4e00;padding-right: 30px;" id="cusername" >Pieter Smith</h1><br>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">Movie was excelent!</p>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">I would recomend it!</p>
@@ -114,7 +114,7 @@
         </div>
         <br>
                 <div class="commentsection" style=" margin-top: 110px;">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;color:#ff4e00;padding-right: 30px;" id="cusername" >Pieter Smith</h1><br>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">Movie was excelent!</p>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">I would recomend it!</p>
@@ -123,7 +123,7 @@
         </div>
         <br>
                 <div class="commentsection" style=" margin-top: 110px;">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;color:#ff4e00;padding-right: 30px;" id="cusername" >Pieter Smith</h1><br>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">Movie was excelent!</p>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">I would recomend it!</p>

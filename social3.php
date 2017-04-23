@@ -73,20 +73,20 @@
         
         </div>
         <div id="imgdiv">
-                <img src="" alt="no image yet" id="social"/>
+                <img height="120px" width="340px" src="Images/Logos/numetrosocial.png" style="color:gray;"/>
         </div>
         <div id="selector">
             <div class="col-xs-3 sicons">
-                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt"/></a>
+                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social2.php"><span class="glyphicon glyphicon-film"/></a>
+                    <a href="social2.php"><span class="glyphicon glyphicon-film" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
                     <a href="social3.php"><span class="glyphicon glyphicon-user" style="color:#ff4e00;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social4.php"><span class="glyphicon glyphicon-cog"/></a>
+                    <a href="social4.php"><span class="glyphicon glyphicon-cog" style="color:gray;"/></a>
             </div>
         </div>
         <div class="searchbar">
@@ -98,14 +98,14 @@
         <div  style= "border-bottom: 5px solid white;padding-bottom: 80px;">
          <h1 id="recentsearch">Recent Searches</h1>
                <a href="profilefeed.php"> <div class="moviepic" style="">
-                    <img src="" alt="balsak" class="spfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="balsak" class="spfp"/>
                      <h3 style="float:right;padding-left: 20px;" class="spersonname">Pieter Smith</h3>
                 </div></a>
                 <br>
                 <br>
                 <br>
                 <a href="Justin.php"><div  class="moviepic" style="">
-                    <img src="" alt="balsak" class="spfp"/>
+                    <img src="Images/profilepics/2.jpg" alt="balsak" class="spfp"/>
                      <h3 style="float:right;padding-left: 20px;" class="spersonname">Justin Clarke</h3>
                      <br>
                 </div></a>
@@ -116,14 +116,14 @@
         <div>
          <h1 id="recentsearch">Trending</h1>
                 <a href="profilefeed.php"><div class="moviepic" style="">
-                    <img src="" alt="balsak" class="spfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="balsak" class="spfp"/>
                      <h3 style="float:right;padding-left: 20px;" class="spersonname">Pieter Smith</h3>
                 </div></a>
                 <br>
                 <br>
                 <br>
                <a href="Justin.php"> <div  class="moviepic" style="">
-                    <img src="" alt="balsak" class="spfp"/>
+                    <img src="Images/profilepics/2.jpg" alt="balsak" class="spfp"/>
                      <h3 style="float:right;padding-left: 20px;" class="spersonname">Justin Clarke</h3>
                      <br>
                 </div></a>

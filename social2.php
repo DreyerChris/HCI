@@ -73,20 +73,20 @@
         
         </div>
         <div id="imgdiv">
-                <img src="" alt="no image yet" id="social"/>
+               <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
         <div id="selector">
             <div class="col-xs-3 sicons">
-                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt"/></a>
+                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
                     <a href="social2.php"><span class="glyphicon glyphicon-film" style="color:#ff4e00;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social3.php"><span class="glyphicon glyphicon-user"/></a>
+                    <a href="social3.php"><span class="glyphicon glyphicon-user" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social4.php"><span class="glyphicon glyphicon-cog"/></a>
+                    <a href="social4.php"><span class="glyphicon glyphicon-cog" style="color:gray;"/></a>
             </div>
         </div>
         <div class="searchbar">
@@ -98,38 +98,38 @@
         <h1 id="recentsearch">Recent Searches</h1>
         <div id="recent">
                  <a href="moviedetails.php"><div class="moviepic" style="">
-                    <img src="" alt="balsak" class="moviesearchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Tollie kaptein 3</h3>
+                    <img src="Images/carousel/4.jpg" alt="balsak" class="moviesearchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="smoviename">King Kong</h3>
                 </div></a>
                 <br>
                  <a href="moviedetails.php"><div  class="moviepic" style="">
-                    <img src="" alt="balsak" class="moviesearchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Balsak ryer `</h3>
+                    <img src="Images/carousel/3.jpg" alt="balsak" class="moviesearchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Chips</h3>
                      <br>
                 </div></a>
                 <br>                
                  <a href="moviedetails.php"><div  class="moviepic" style="">
-                    <img src="" alt="balsak" class="moviesearchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Facesitters united</h3>
+                    <img src="Images/carousel/2.jpg" alt="balsak" class="moviesearchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Jhon Wick 2</h3>
                 </div></a>
         </div>
 
         <div>
          <h1 id="recentsearch">Trending</h1>
                 <a href="moviedetails.php"><div class="moviepic" style="">
-                    <img src="" alt="balsak" class="moviesearchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Tollie kaptein 3</h3>
+                    <img src="Images/carousel/4.jpg" alt="balsak" class="moviesearchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="smoviename">King Kong</h3>
                 </div></a>
                 <br>
                 <a href="moviedetails.php"><div  class="moviepic" style="">
-                    <img src="" alt="balsak" class="moviesearchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Balsak ryer `</h3>
+                    <img src="Images/carousel/3.jpg" alt="balsak" class="moviesearchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Chips</h3>
                      <br>
                 </div></a>
                 <br>                
                <a href="moviedetails.php"> <div  class="moviepic" style="">
-                    <img src="" alt="balsak" class="moviesearchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Facesitters united</h3>
+                    <img src="Images/carousel/2.jpg" alt="balsak" class="moviesearchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="smoviename">Jhon Wick 2</h3>
                 </div></a>
         </div>
 

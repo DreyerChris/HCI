@@ -77,16 +77,16 @@
         </div>
         <div id="selector">
             <div class="col-xs-3 sicons">
-                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt"/></a>
+                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social2.php"><span class="glyphicon glyphicon-film"/></a>
+                    <a href="social2.php"><span class="glyphicon glyphicon-film" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
                     <a href="social3.php"><span class="glyphicon glyphicon-user" style="color:#ff4e00;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social4.php"><span class="glyphicon glyphicon-cog"/></a>
+                    <a href="social4.php"><span class="glyphicon glyphicon-cog" style="color:gray;"/></a>
             </div>
         </div>
         <div class="commentsection">

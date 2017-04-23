@@ -73,26 +73,26 @@
         
         </div>
         <div id="imgdiv">
-                <img src="" alt="no image yet" id="social"/>
+                <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
         <div id="selector">
             <div class="col-xs-3 sicons">
                     <a href="social1.php"><span class="glyphicon glyphicon-list-alt" style="color:#ff4e00;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social2.php"><span class="glyphicon glyphicon-film"/></a>
+                    <a href="social2.php"><span class="glyphicon glyphicon-film" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social3.php"><span class="glyphicon glyphicon-user"/></a>
+                    <a href="social3.php"><span class="glyphicon glyphicon-user" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social4.php"><span class="glyphicon glyphicon-cog"/></a>
+                    <a href="social4.php"><span class="glyphicon glyphicon-cog" style="color:gray;"/></a>
             </div>
         </div>
         <div class="watched">
             <div class="gentext">Pietie watched and commented on:</div>
             <div>
-                    <img src="Images/Carousel/1.jpg" alt="no image" class="watchedmovie"/>
+                    <img src="Images/Carousel/2.jpg" alt="no image" class="watchedmovie"/>
             </div>
         </div>
         <div id="lc">
@@ -105,9 +105,9 @@
                 <div  class="col-xs-4 lcs" style="padding-left: 65px;">Share</div>
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;"id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="no alternative" style="float:left;"id="cpfp"/>
                 <h1 style="float:right;padding-left: 20px;" id="cusername">Pieter Smith</h1><br>
-                <h3 style="float:left;color:white;padding-left:20px;">excelent fools!</h3>
+                <h3 style="float:left;color:white;padding-left:20px;">excelent movie!</h3>
                 <br>
         </div>
     <br>
@@ -118,9 +118,9 @@
     <br>
     <br>
         <div class="commentsection2">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/2.jpg" alt="no alternative" style="float:left;" id="cpfp"/>
                     <!--<input type="textarea" value="comment" id="commentbox"/>-->
-                    <textarea rows="4" cols="50" placeholder="Comment here..." id="commentbox"></textarea>
+                    <input type="text" name="" placeholder="Comment here.." id="commentinput"/>
         </div>
 
 

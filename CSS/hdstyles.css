@@ -816,9 +816,10 @@ div#imgdiv{
     background-color: black;
 }
 div#selector{
-  background-color: lightgray;
+  background-color: white;
   height: 100px;
   padding-left: 150px;
+  color:black;
 }
 img#sicons{
   width: 30px;
@@ -1128,6 +1129,11 @@ input.form-control{
   color:white;
   padding-left:20px;
 
+}
+#commentinput{
+  background-color: black;
+  color: white;
+  font-size:20px;
 }
 
 

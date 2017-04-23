@@ -73,24 +73,24 @@
         
         </div>
         <div id="imgdiv">
-                <img src="" alt="no image yet" id="social"/>
+                <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
         <div id="selector">
             <div class="col-xs-3 sicons">
-                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt"/></a>
+                    <a href="social1.php"><span class="glyphicon glyphicon-list-alt" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social2.php"><span class="glyphicon glyphicon-film"/></a>
+                    <a href="social2.php"><span class="glyphicon glyphicon-film" style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
-                    <a href="social3.php"><span class="glyphicon glyphicon-user" /></a>
+                    <a href="social3.php"><span class="glyphicon glyphicon-user"  style="color:gray;"/></a>
             </div>
             <div class="col-xs-3 sicons">
                     <a href="social4.php"><span class="glyphicon glyphicon-cog" style="color:#ff4e00;"/></a>
             </div>
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" ="" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;" id="cusername">Pieter Smith</h1><br>
                 <p class="addressdescript">Wonderboom,pretoria</p>
                 <p class="addressdescript">Petersmith@gmail.com</p><br>
