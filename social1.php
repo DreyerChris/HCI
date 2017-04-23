@@ -89,10 +89,11 @@
                     <a href="social4.php"><span class="glyphicon glyphicon-cog" style="color:gray;"/></a>
             </div>
         </div>
-        <div class="watched">
+        <div class="watched" style="padding-left:20px;padding-right: 20px;">
             <div class="gentext">Pietie watched and commented on:</div>
             <div>
-                    <img src="Images/Carousel/2.jpg" alt="no image" class="watchedmovie"/>
+            <line style="margin-top: 10px;font-size: 20px;">25 Feb 7:30 AM</line>
+                    <img src="Images/Carousel/2.jpg" alt="no image" class="watchedmovie" style="padding-left: 0px;padding-right: 0px;" />
             </div>
         </div>
         <div id="lc">

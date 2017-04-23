@@ -73,7 +73,7 @@
         
         </div>
         <div id="imgdiv">
-                <img src="" alt="no image yet" id="social"/>
+                <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
         <div id="selector">
             <div class="col-xs-3 sicons">
