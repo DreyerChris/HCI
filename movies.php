@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <?php
-if(!empty($_GET))
-{
-    $sortType = $_GET['sortType'];
-}
-else
-{
-    $sortType = "rating";
-}
+    if(!empty($_GET['moviesorting']))
+    {
+        $sortType = $_GET['moviesorting'];
+        if($sortType == "Alphabetical")
+        {
+            $sortType = "nameMovie DESC";
+        }
+        if($sortType == "Newest first")
+        {
+            $sortType = "releaseDate DESC";
+        }
+        if($sortType == "Oldest first")
+        {
+            $sortType = "releaseDate ASC";
+        }
+        if($sortType == "Top Rated")
+        {
+            $sortType = "rating DESC";
+        }
+        if($sortType == "Age restriction")
+        {
+            $sortType = "ageRestriction DESC";
+        }
+    }
+    else
+    {
+         $sortType = "rating DESC";
+    }
+    if(!empty($_GET['moviesearch']))
+    {
+        $searchFor = "WHERE nameMovie LIKE '%".$_GET['moviesearch']."%'";
+    }
+    else
+    {
+        $searchFor = "";
+    }
 
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "numetro";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password,$dbname);
 
-// Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
@@ -57,7 +83,7 @@ if ($conn->connect_error) {
         <div class="col-xs-1"></div>
         <div class="col-xs-6">
             <div id="cinemasearchbar">
-                <form>
+                <form action="movies.php" method="GET">
                     <input type="text" name="moviesearch" id="whiteborderinput" placeholder="Search for movie...">
                 </form>
             </div>
@@ -67,7 +93,7 @@ if ($conn->connect_error) {
 
         <div class="col-xs-1">
             <div id="moviesorting">
-                <form>
+                <form action="movies.php" method="GET">
                     <input list="sorting" class="dropdown-toggle" name="moviesorting" id="redborderinput" placeholder="Top Rated">
                     <datalist id="sorting">
                         <option id="redborderinput" value="Alphabetical">
@@ -81,8 +107,8 @@ if ($conn->connect_error) {
         </div>  
     </div>
 
-    <?php
-    $sql = 'SELECT * FROM movie ORDER BY '.$sortType.' DESC';
+<?php
+    $sql = 'SELECT * FROM movie '.$searchFor.' ORDER BY '.$sortType.'';
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
@@ -109,6 +135,6 @@ if ($conn->connect_error) {
     }
 
     $conn->close();
-    ?>
+?>
     </body>
 </html>
