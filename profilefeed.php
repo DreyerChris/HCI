@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" ="" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;" id="cusername">Pieter Smith</h1><br>
                 <p style="float:left;color:white;padding-left:20px;">Wonderboom,pretoria</p>
                 <p style="float:left;color:white;padding-left:20px;">Petersmith@gmail.com</p><br>
@@ -126,7 +126,7 @@
                 <div  class="col-xs-4 lcs" style="padding-left: 65px;">Share</div>
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;"id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="no alternative" style="float:left;"id="cpfp"/>
                 <h1 style="float:right;padding-left: 20px;" id="cusername">Pieter Smith</h1><br>
                 <h3 style="float:left;color:white;padding-left:20px;">excelent fools!</h3>
                 <br>

@@ -113,22 +113,22 @@
         <div id="Feed">
             About
         </div>
-        <line class="profileheader">Likes</line>
+        <line class="profileheader" style="padding-left: 20px;">Likes</line>
         <div id="moviepreferences">
 
             <div class="col-xs-6 checkboxes">
-                        <input type="checkbox" name="Adventure" class="genrecheck">Adventure</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Animation</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Action</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Romance</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Thriller</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck" st> Adventure</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Animation</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Action</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Romance</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Thriller</input><br>
             </div>
             <div class="col-xs-6 checkboxes">
-                 <input type="checkbox" name="Adventure" class="genrecheck">Horror</input><br>
-                 <input type="checkbox" name="Adventure" class="genrecheck">Drama</input><br>
-                 <input type="checkbox" name="Adventure" class="genrecheck">Comedy</input><br>
-                 <input type="checkbox" name="Adventure" class="genrecheck">Drama</input><br>
-                 <input type="checkbox" name="Adventure" class="genrecheck">Sci-Fi</input><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck"> Horror</input><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck"> Drama</input><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck"> Comedy</input><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck"> Drama</input><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck"> Sci-Fi</input><br>
                  <br>
             </div>
         </div> 
@@ -138,7 +138,7 @@
                 <div style="text-align: center;margin-top: 50px;padding-bottom: 20px;">
                         <a href=""><input type="button" name="edit" value="Edit personal info" class="btnedit"/></a>
                 </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacinia ipsum. Duis placerat lacus augue, ac luctus turpis sollicitudin eu. Etiam eu bibendum nulla, tempus placerat libero. Quisque suscipit magna at tellus pulvinar ultrices. Maecenas tincidunt mattis leo, at iaculis velit porta vitae. Fusce libero sapien, vestibulum rhoncus ante at, vulputate congue erat. Cras faucibus ex sit amet arcu gravida laoreet. Aenean tellus felis, accumsan nec massa et, elementum sollicitudin nisi. Nulla facilisi. Sed nec dignissim quam, in bibendum risus. Ut posuere purus nisi, sed consequat orci auctor eget.</p>
+            <p style="padding-left: 25px;padding-right: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacinia ipsum. Duis placerat lacus augue, ac luctus turpis sollicitudin eu. Etiam eu bibendum nulla, tempus placerat libero. Quisque suscipit magna at tellus pulvinar ultrices. Maecenas tincidunt mattis leo, at iaculis velit porta vitae. Fusce libero sapien, vestibulum rhoncus ante at, vulputate congue erat. Cras faucibus ex sit amet arcu gravida laoreet. Aenean tellus felis, accumsan nec massa et, elementum sollicitudin nisi. Nulla facilisi. Sed nec dignissim quam, in bibendum risus. Ut posuere purus nisi, sed consequat orci auctor eget.</p>
         </div> 
 
 

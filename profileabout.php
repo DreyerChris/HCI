@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" ="" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;" id="cusername">Pieter Smith</h1><br>
                 <p class="addressdescript">Wonderboom,pretoria</p>
                 <p class="addressdescript">Petersmith@gmail.com</p><br>
@@ -109,7 +109,7 @@
         <div id="Feed">
             About
         </div>
-        <line class="profileheader">Likes</line>
+        <line class="profileheader" style="padding-left: 20px;">Likes</line>
         <div id="moviepreferences">
 
             <div class="col-xs-6 checkboxes">
@@ -121,13 +121,13 @@
             </div>
             <div class="col-xs-6 checkboxes">
                  <input type="checkbox" name="Adventure" class="genrecheck">Horror</input><br>
-                 <input type="checkbox" name="Adventure" class="genrecheck">Drama</input><br><br><br><br><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck">Drama</input><br><br><br><br><br><br>
             </div>
         </div> 
      <div id="moviepreferences">
 
             <line class="profileheader">Bio</line>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacinia ipsum. Duis placerat lacus augue, ac luctus turpis sollicitudin eu. Etiam eu bibendum nulla, tempus placerat libero. Quisque suscipit magna at tellus pulvinar ultrices. Maecenas tincidunt mattis leo, at iaculis velit porta vitae. Fusce libero sapien, vestibulum rhoncus ante at, vulputate congue erat. Cras faucibus ex sit amet arcu gravida laoreet. Aenean tellus felis, accumsan nec massa et, elementum sollicitudin nisi. Nulla facilisi. Sed nec dignissim quam, in bibendum risus. Ut posuere purus nisi, sed consequat orci auctor eget.</p>
+            <p style="padding-left: 25px;padding-right: 25px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et lacinia ipsum. Duis placerat lacus augue, ac luctus turpis sollicitudin eu. Etiam eu bibendum nulla, tempus placerat libero. Quisque suscipit magna at tellus pulvinar ultrices. Maecenas tincidunt mattis leo, at iaculis velit porta vitae. Fusce libero sapien, vestibulum rhoncus ante at, vulputate congue erat. Cras faucibus ex sit amet arcu gravida laoreet. Aenean tellus felis, accumsan nec massa et, elementum sollicitudin nisi. Nulla facilisi. Sed nec dignissim quam, in bibendum risus. Ut posuere purus nisi, sed consequat orci auctor eget.</p>
         </div> 
 
 
