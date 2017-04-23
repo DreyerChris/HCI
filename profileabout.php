@@ -113,15 +113,15 @@
         <div id="moviepreferences">
 
             <div class="col-xs-6 checkboxes">
-                        <input type="checkbox" name="Adventure" class="genrecheck">Adventure</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Animation</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Action</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Romance</input><br>
-                        <input type="checkbox" name="Adventure" class="genrecheck">Thriller</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Adventure</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Animation</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Action</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Romance</input><br>
+                        <input type="checkbox" name="Adventure" class="genrecheck"> Thriller</input><br>
             </div>
             <div class="col-xs-6 checkboxes">
-                 <input type="checkbox" name="Adventure" class="genrecheck">Horror</input><br>
-                 <input type="checkbox" name="Adventure" class="genrecheck">Drama</input><br><br><br><br><br><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck"> Horror</input><br>
+                 <input type="checkbox" name="Adventure" class="genrecheck"> Drama</input><br><br><br><br><br><br>
             </div>
         </div> 
      <div id="moviepreferences">
