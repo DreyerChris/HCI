@@ -132,7 +132,7 @@
         <div id="alsowatched">
             <line style="font-size:25px;color:white;">People who watched this also watched:</line>
             <div>
-                <img src="Images/Carousel/1.jpg" alt="no image" class="alsowatchedmovieimg"/>
+                <img src="Images/Carousel/3.jpg" alt="no image" class="alsowatchedmovieimg"/>
             </div>
         </div>
  
