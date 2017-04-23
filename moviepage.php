@@ -63,19 +63,30 @@ if ($conn->connect_error) {
 
                      echo'<div id="moviepageinfo" class="col-xs-12">';
                         echo'<div>';
-                             echo'<h3 id="moviepagetitle">'.$row["nameMovie"].'</h3><div id="agerestrictionmoviepage">PG V</div><div id="genre">Animation</div><div id="favouritecontainer"><span id="favourite" class="glyphicon glyphicon-heart-empty></span>';
-                                echo'<dl>';
+                             echo'<h3 id="moviepagetitle">'.$row["nameMovie"].'</h3><div id="agerestrictionmoviepage">PG V</div><div id="favouritecontainer"><span id="favouriteempty" class="glyphicon glyphicon-heart"></span></div>';
+                                /*echo'<dl>';
                              echo '<dt>Director: '.$row["Director"].'</dt>';
                              echo '<dt>Music: '.$row["Music"].'</dt>';
                              echo '<dt>Running time: '.$row["runningTime"].'</dt>';
-                                echo'</dl>';
+                                echo'</dl>';*/
                         echo'</div>';
-                     echo'</div>';
-
-                      echo'<div class="col-xs-6">';
-                        echo'<div>';
-                            echo $row["synopsis"];
-                        echo'</div>';
+                        echo '<div class="col-xs-6">';
+                            echo '<div class="row">';
+                                echo'<h3 class="first" id="movieinfoheadermoviepage">Director: <span id="movieinfocontentmoviepage">'.$row["Director"].'</span></h3>';
+                            echo '</div>';
+                            echo '<div class="row">';
+                                echo'<h3 id="movieinfoheadermoviepage">Music: <span id="movieinfocontentmoviepage">'.$row["Music"].'</span></h3>';
+                            echo '</div>';
+                            echo '<div class="row">';
+                                echo'<h3 class="first" id="movieinfoheadermoviepage">Running time: <span id="movieinfocontentmoviepage">'.$row["runningTime"].'</span></h3>';
+                            echo '</div>';
+                            echo '<div class="row">';
+                                echo'<h3 id="movieinfoheadermoviepage">Release date: <span id="movieinfocontentmoviepage">14 February</span></h3>';
+                            echo '</div>';
+                        echo '</div>';
+                        echo '<div class="col-xs-6">';
+                            echo '<p id="moviedescription"><span id="blurb">Movie blurb.</span><br>' .$row["synopsis"]. '</p>';
+                        echo '</div>';
                      echo'</div>';
 
                      echo'<div class="col-xs-12">';

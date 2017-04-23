@@ -138,6 +138,7 @@ div.movierating{
     color: #ff4e00;
     font-size: 45px;
     display: inline;
+    margin-bottom: 30px;
 }
 
 #moviepageinfo{
@@ -153,5 +154,47 @@ div.movierating{
 
 #favouritecontainer{
     color: white;
+    font-size: 45px;
+    display: inline;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+#favouriteempty{
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.moviepageinfo .row #movietitle{
+    color: white;
     font-size: 40px;
+    margin-left: 50px;
+    font-weight: 300;
+}
+
+#movieinfoheadermoviepage{
+    color: white;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 300;
+}
+
+#movieinfoheadermoviepage .first{
+    margin-top: 30px;
+}
+
+#movieinfocontentmoviepage{
+    font-weight: 100;
+    color: #aaa;
+}
+
+#moviedescription{
+    color: white;
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+#blurb{
+    color: #ff4e00; 
 }
