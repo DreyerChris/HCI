@@ -26,6 +26,7 @@
     }
     else
     {
+        $_GET['moviesorting'] = "Top Rated";
          $sortType = "rating DESC";
     }
     if(!empty($_GET['moviesearch']))
@@ -94,7 +95,7 @@ if ($conn->connect_error) {
         <div class="col-xs-1">
             <div id="moviesorting">
                 <form action="movies.php" method="GET">
-                    <input list="sorting" class="dropdown-toggle" name="moviesorting" id="redborderinput" placeholder="Top Rated">
+                    <input list="sorting" class="dropdown-toggle" name="moviesorting" id="redborderinput" placeholder=<?php echo'"'.$_GET['moviesorting'].'"' ?>>
                     <datalist id="sorting">
                         <option id="redborderinput" value="Alphabetical">
                         <option id="redborderinput" value="Newest first">
