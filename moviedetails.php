@@ -90,13 +90,10 @@
             </div>
         </div>
         <div id="movietitle">
-            <div class="gentext" style="text-align: center;border-bottom: none;">Movie Title</div>
+            <div class="gentext" style="text-align: center;border-bottom: none;">Jhon Wick 2</div>
             <div class="trailerwindow">
-                    <video width="100%" height="400" controls id="videowindow">
-					  <source src="images/mov_bbb.mp4" type="video/mp4">
-					  <source src="movie.ogg" type="video/ogg">
-					Your browser does not support the video tag.
-					</video>
+                <embed width="100%" height="315"
+                src="https://www.youtube.com/watch?v=XGk2EfbD_Ps">
             </div>
         </div>
         <div class="movierating">
@@ -114,9 +111,9 @@
         </div>
         <br>
                 <div class="commentsection" style=" margin-top: 110px;">
-                    <img src="Images/profilepics/1.jpg" alt="no alternative" style="float:left;" id="cpfp"/>
-                <h1 style="float:right;color:#ff4e00;padding-right: 30px;" id="cusername" >Pieter Smith</h1><br>
-                <p style="float:left;color:white;padding-left:20px;font-size: 20px;">Movie was excelent!</p>
+                    <img src="Images/profilepics/2.jpg" alt="no alternative" style="float:left;" id="cpfp"/>
+                <h1 style="float:right;color:#ff4e00;padding-right: 30px;" id="cusername" >Justin Clarke</h1><br>
+                <p style="float:left;color:white;padding-left:20px;font-size: 20px;">Great</p>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">I would recomend it!</p>
                 <br>
 
@@ -125,7 +122,7 @@
                 <div class="commentsection" style=" margin-top: 110px;">
                     <img src="Images/profilepics/1.jpg" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;color:#ff4e00;padding-right: 30px;" id="cusername" >Pieter Smith</h1><br>
-                <p style="float:left;color:white;padding-left:20px;font-size: 20px;">Movie was excelent!</p>
+                <p style="float:left;color:white;padding-left:20px;font-size: 20px;">Was good!</p>
                 <p style="float:left;color:white;padding-left:20px;font-size: 20px;">I would recomend it!</p>
                 <br>
 
