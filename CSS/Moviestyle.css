@@ -32,7 +32,6 @@ redborderinput::-webkit-input-placeholder{
 }
 
 #movieposter{
-    height: 500px;
     position: relative;
 }
 
@@ -197,4 +196,13 @@ div.movierating{
 
 #blurb{
     color: #ff4e00; 
+}
+
+#moviedropdowns{
+    height: 100%;
+    background-color: white;
+}
+
+#movieratingrow{
+    margin-top: 20px;
 }
