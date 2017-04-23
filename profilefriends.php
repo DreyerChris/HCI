@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" ="" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;" id="cusername">Pieter Smith</h1><br>
                 <p style="float:left;color:white;padding-left:20px;">Wonderboom,pretoria</p>
                 <p style="float:left;color:white;padding-left:20px;">Petersmith@gmail.com</p><br>
@@ -119,14 +119,14 @@
         </div>
          <div  style= "border-bottom: 5px solid white;padding-bottom: 80px;">
                <a href="profilefeed.php"> <div class="moviepic" style="">
-                    <img src="" alt="balsak" class="spfp"/>
+                    <img src="Images/profilepics/1.jpg" alt="balsak" class="spfp"/>
                      <h3 style="float:right;padding-left: 20px;" class="spersonname">Pieter Smith</h3>
                 </div></a>
                 <br>
                 <br>
                 <br>
                 <a href="Justin.php"><div  class="moviepic" style="">
-                    <img src="" alt="balsak" class="spfp"/>
+                    <img src="Images/profilepics/2.jpg" alt="balsak" class="spfp"/>
                      <h3 style="float:right;padding-left: 20px;" class="spersonname">Justin Clarke</h3>
                      <br>
                 </div></a>

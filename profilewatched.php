@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="commentsection">
-                    <img href="" alt="no alternative" style="float:left;" id="cpfp"/>
+                    <img src="Images/profilepics/1.jpg" ="" alt="no alternative" style="float:left;" id="cpfp"/>
                 <h1 style="float:right;" id="cusername">Pieter Smith</h1><br>
                 <p class="addressdescript">Wonderboom,pretoria</p>
                 <p class="addressdescript">Petersmith@gmail.com</p><br>
@@ -112,21 +112,21 @@
           <div>
                 <a href="moviedetails.php"><div class="moviepic" style="">
                  <img src="images/social/close.png" alt="balsak" class="closepng"/>
-                    <img src="" alt="balsak" class="moviewatchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="wmoviename">Tollie kaptein 3</h3>
+                    <img src="Images/Carousel/4.jpg" alt="balsak" class="moviewatchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="wmoviename">King Kong</h3>
                 </div></a>
                 <br>
                 <a href="moviedetails.php"><div  class="moviepic" style="">
                 <img src="images/social/close.png" alt="balsak" class="closepng"/>
-                    <img src="" alt="balsak" class="moviewatchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="wmoviename">Balsak ryer `</h3>
+                    <img src="Images/Carousel/3.jpg" alt="balsak" class="moviewatchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="wmoviename">Chips</h3>
                      <br>
                 </div></a>
                 <br>                
                <a href="moviedetails.php"> <div  class="moviepic" style="">
                 <img src="images/social/close.png" alt="balsak" class="closepng"/>
-                    <img src="" alt="balsak" class="moviewatchimg"/>
-                     <h3 style="float:right;padding-left: 20px;" class="wmoviename">Facesitters united</h3>
+                    <img src="Images/Carousel/2.jpg" alt="balsak" class="moviewatchimg"/>
+                     <h3 style="float:right;padding-left: 20px;" class="wmoviename">Jhon Wick 2</h3>
                 </div></a>
         </div>
 
