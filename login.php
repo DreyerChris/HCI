@@ -18,7 +18,7 @@
             <a href="index.php"><div id="closelink" class="col-xs-1"><span class="glyphicon glyphicon-remove"></span></div></a>
         </div>
         <div id="numetrosocialheader" class="col-xs-12">
-            
+            <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
         <div id="loginheading" class="col-xs-12">
             <h1 id="orangeheading">Log In</h1>

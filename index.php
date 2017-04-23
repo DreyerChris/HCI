@@ -24,7 +24,7 @@
         <div id="menu" style="z-index: -1;">
             <div id="menurowfirst" class="row">
                 <div id="menulinkcontainer" class="col-xs-12">
-                    <div id="menulinkicon" class="col-xs-3"></div>
+                    <div id="menulinkicon" class="col-xs-3"><img height="70px" width="110px" src="Images/Logos/numetrosocialsmall.png"/></div>
                     <div id="menulinklink" class="col-xs-9"><a id="menulink"><span id="orangemenulink">NuMetro Social</span></a></div>
                 </div>
             </div>
