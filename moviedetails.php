@@ -91,9 +91,11 @@
         </div>
         <div id="movietitle">
             <div class="gentext" style="text-align: center;border-bottom: none;">Jhon Wick 2</div>
+
             <div class="trailerwindow">
-                <embed width="100%" height="315"
+            <iframe width="100%" height="315"
                 src="https://www.youtube.com/watch?v=XGk2EfbD_Ps">
+                </iframe>
             </div>
         </div>
         <div class="movierating">
