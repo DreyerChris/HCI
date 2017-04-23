@@ -61,22 +61,26 @@
         <form class="form-group" action="index.php" method="post">
             <div class="row"><div  class="col-xs-12 "><h2 class="orange">What would you like to do</h2></div></div>
             <div class="row">
+            <div  class="col-xs-1 "></div>
                 <div  class="col-xs-6 "><input type="radio" name="toDo" value="question" > Ask a question</div>
-                <div  class="col-xs-6 "><input type="radio" name="toDo" value="Suggestion"> Offer a suggestion</div>
-            </div>
+                <div  class="col-xs-5 "><input type="radio" name="toDo" value="Suggestion"> Offer a suggestion</div>
+            </div> <br>
             <div class="row">
+            <div  class="col-xs-1 "></div>
                 <div  class="col-xs-6 "><input type="radio" name="toDo" value="Compliment"> Compliment us</div>
-                <div  class="col-xs-6 "><input type="radio" name="toDo" value="Complaint"> Make a complaint</div><br>
-            </div>
-            <div class="row"><div  class="col-xs-12 "><h2 class="orange">Regarding</h2></div></div>
+                <div  class="col-xs-5 "><input type="radio" name="toDo" value="Complaint"> Make a complaint</div><br>
+            </div> <br>
+            <div class="row"><div  class="col-xs-12 "><h2 class="orange">Regarding</h2></div></div> <br>
             <div class="row">
+            <div  class="col-xs-1 "></div>
                 <div  class="col-xs-6 "><input type="radio" name="regarding" value="cinema" > A cinema</div>
-                <div  class="col-xs-6 "><input type="radio" name="regarding" value="movie"> A particular movie</div><br>
-            </div>
+                <div  class="col-xs-5 "><input type="radio" name="regarding" value="movie"> A particular movie</div><br>
+            </div> <br>
             <div class="row">
+            <div  class="col-xs-1 "></div>
                 <div  class="col-xs-6 "><input type="radio" name="regarding" value="app"> Our app</div>
-                <div  class="col-xs-6"><input type="radio" name="regarding" value="other"> Other</div><br>
-            </div>
+                <div  class="col-xs-5"><input type="radio" name="regarding" value="other"> Other</div><br>
+            </div> <br>
 
             <div  class="col-xs-0 "></div>
                     <div  class="col-xs-12 ">
@@ -90,11 +94,13 @@
             <br>
              <div class="row"><div  class="col-xs-12 "><h2 class="orange">Your details</h2></div></div>
              <div class="row">
+             <div  class="col-xs-1 "></div>
                 <div  class="col-xs-6 "><input type="text" name="firstname" placeholder="Name"> </div>
-                <div  class="col-xs-6 "><input type="number" name="contactNumber" placeholder="Contact number"> </div><br>
+                <div  class="col-xs-5 "><input type="number" name="contactNumber" placeholder="Contact number"> </div><br>
             </div>
             <br>
             <div class="row">
+                <div  class="col-xs-1 "></div>
                 <div  class="col-xs-6 "><input type="email" name="email" placeholder="Email Address"></div><br>
             </div>
             <div class="row"><div  class="col-xs-12 "><h2 class="orange">Message</h2></div></div>
@@ -102,6 +108,9 @@
             <div  class="col-xs-10 "><textarea class="form-control" rows="5" id="comment"></textarea></div>
             <div  class="col-xs-1 "></div>
             <br>
+            <div class="row">
+             <div  class="col-xs-12 "></div>
+             </div>
             <div class="row">
                 <div  class="col-xs-5 "></div>
                 <div  class="col-xs-3 "><button type="submit" class="btn contactus">Contact Us</button></div>
