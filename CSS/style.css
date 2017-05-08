@@ -19,6 +19,12 @@ body.white{
     text-align: center;
 }
 
+body.black{
+    background-color: black;
+    overflow-x: hidden;
+    text-align: center;
+}
+
 a{color: white !important}
 
 div#navbar{
@@ -372,6 +378,11 @@ span#blacklink{
 }
 
 #sociallink{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#sociallinkorange{
     margin-top: 20px;
     text-align: center;
 }
@@ -804,6 +815,218 @@ dic#snackprice{
 #socialmediaicon{
     text-align: left;
     font-size: 30px;
+}
+
+#linkbar{
+    background-color: white;
+    height: 100px;
+}
+
+#sociallinkorange{
+    font-size: 45px;
+    color: #ff4e00;
+}
+
+#sociallink{
+    font-size: 45px;
+    color: #222;
+}
+
+#feeditem{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#feedheading{
+    font-size: 40px;
+    color: #ff4e00;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    text-align: left;
+}
+
+#feedheadingline{
+    height: 3px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#feedheadingdate{
+    margin-left: 40px;
+    margin-top: 10px;
+    text-align: left;
+    font-weight: 100;
+    color: white;
+    font-size: 30px;
+}
+
+#feedmovieimage{
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-size: cover;
+}
+
+#feedlikes{
+    font-weight: 100;
+    margin-top: 20px;
+    color: white;
+    text-align: left;
+    padding: 0;
+    font-size: 30px;
+}
+
+#feedcomments{
+    font-weight: 100;
+    margin-top: 20px;
+    color: white;
+    text-align: right;
+    padding: 0;
+    font-size: 30px;
+}
+
+#likescommentscontainer{
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+}
+
+#likecommentshareline{
+    height: 3px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+#likecommentshareline2{
+    height: 3px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 70px;
+}
+
+
+#likecommentshare{
+    color: white;
+    font-size: 35px;
+    margin-top: 10px;
+}
+
+#commentprofilepic{
+    text-align: center;
+}
+
+#commentername{
+    color: white;
+    font-size: 35px;
+    font-weight: 500;
+    margin: 0;
+}
+
+#commentcontent{
+    text-align: left;
+}
+
+#commentcontainer{
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+p#comment{
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 10px;
+}
+
+input#makecomment{
+    border: 3px solid white;
+    height: 100px;
+    background-color: transparent;
+    color: white;
+}
+
+#socialmovietitle{
+    text-align: center;
+    color: #ff4e00;
+    font-size: 50px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+#socialmovieheadingline{
+    height: 3px;
+    background-color: white;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#ratingstar{
+    font-size: 50px;
+    color: white;
+}
+
+#ratingstars{
+    margin-top: 15px;
+    padding-right: 30px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+#movieratingtext{
+    color: white;
+    font-size: 50px;
+    padding: 0px;
+    text-align: left;
+}
+
+#friendswatched{
+    margin-top: 5px;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#friendswatchedlight{
+    font-weight: 100;
+}
+
+#otherswatched{
+    font-weight: 100;
+    color: #ff4e00;
+}
+
+#moviecomments{
+    height: 320px;
+    overflow: scroll;
+}
+
+#movieratingcontainer{
+    margin-left: 0px;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+#reccomendedmovietext{
+    font-size: 35px;
+    font-weight: 400;
+    color: #ff4e00;
+    margin-top: 30px;
+}
+
+#reccomendedmovieimage{
+    margin-top: 30px;
+    height: 258px;
+    overflow: hidden;
 }
 
 
