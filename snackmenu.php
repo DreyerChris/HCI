@@ -485,12 +485,12 @@
                   </div>
                   <div class="row">
                     <div id="subtotal" class="col-xs-12">
-                        Subtotal R<span id="subtotalamount">0.00</span>  
+                        Subtotal R<span id="subtotalamount popcorn">0.00</span>  
                     </div>
                   </div>
               </div>
               <div class="modal-footer">
-                  <button type="submit" data-dismiss="modal" class="orangebuttonsnackmenu">Confirm</button><br>
+                  <button type="submit" data-dismiss="modal" class="orangebuttonsnackmenu" id="popcornconfirm">Confirm</button><br>
                   <button data-dismiss="modal" class="blackghostbuttonsnackmenu">Cancel</button></a>
               </div>
             </div>
@@ -723,7 +723,8 @@
               </div>
             </div>
 
-            </div>
         </div>
+        </div>
+        <script src="JS/snackmenu.js"></script>
     </body>
 </html>
