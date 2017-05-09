@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <?php session_start(); ?>
     <head>
         <title>Choose your snacks</title>
         <link rel="stylesheet" href="CSS/style.css"/>
@@ -13,7 +14,7 @@
     </head>
     <body class="main">
         <div id="navbar">
-            <div class="col-xs-10 col-xs-offset-1" id="navbartext">Rock Dog at Menlyn Park</div>
+            <div class="col-xs-10 col-xs-offset-1" id="navbartext"><?php echo $_SESSION["movie"];?> at <?php echo $_SESSION["cinema"];?></div>
             <a href="index.php"><div id="closelink" class="col-xs-1"><span class="glyphicon glyphicon-remove"></span></div></a>
         </div>
         <div id="snacksheadingbar" class="col-xs-12">
@@ -371,12 +372,12 @@
                   </div>
                   <div class="row">
                     <div id="subtotal" class="col-xs-12">
-                        Subtotal R<span id="subtotalamount">0.00</span>  
+                        Subtotal R<span id="subtotalamount soda">0.00</span>  
                     </div>
                   </div>
               </div>
               <div class="modal-footer">
-                  <button type="submit" data-dismiss="modal" class="orangebuttonsnackmenu">Confirm</button><br>
+                  <button type="submit" data-dismiss="modal" class="orangebuttonsnackmenu" id="sodaconfirm">Confirm</button><br>
                   <button data-dismiss="modal" class="blackghostbuttonsnackmenu">Cancel</button></a>
               </div>
             </div>

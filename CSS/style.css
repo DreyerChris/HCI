@@ -326,7 +326,7 @@ div#loginheading{
     margin-top: 50px;
 }
 
-#selects{
+#selectstime, #selectsdate, #selectscinema, #selectsmovie, #selectstickets{
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 80px;
@@ -335,6 +335,10 @@ div#loginheading{
     color: #ff4e00;
     border: 3px solid black;
     border-radius: 10px;
+}
+
+#selects select{
+    text-align: center;
 }
 
 #selects select:focus{
