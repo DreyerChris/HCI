@@ -1,4 +1,26 @@
 <!DOCTYPE html>
+<?php
+
+if(!empty($_GET['peoplesearch']))
+    {
+        $searchFor = "WHERE username LIKE '%".$_GET['peoplesearch']."%'";
+    }
+    else
+    {
+        $searchFor = "";
+    }
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "numetro";
+
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
+?>
 <html>
     <head>
         <title>NuMetro Social</title>
@@ -101,46 +123,59 @@
             </div>
         </div>
         <div class="row">
-            <input class="searchbox" placeholder="Search for people...&#9;&#9;&#9;&#9;&#9;&#9;&#9;       &#xF002;"/>
+        <form action="socialpeoplesearch.php" method="GET">
+            <input class="searchbox" name="peoplesearch" placeholder="Search for people...&#9;&#9;&#9;&#9;&#9;&#9;&#9;       &#xF002;"/>
+        <form>
             <div id="searchdivider"></div>
             <h3 id="searchsuggestionheading">Recent Searches</h3>
         </div>
-        <a href="socialprofile.php">
-            <div id="profilesearchitem" class="row">
-                <div id="profilesearchimage" class="col-xs-4">
-                    <img width="100px" src="Images/profilepics/chrisPP.jpg"/>
-                </div>
-                <div class="col-xs-8">
-                    <h3 id="profilesearchtitle">Chris Dreyer</h3>
-                </div>
-            </div>
-        </a>
-        <div id="profilesearchitem" class="row">
-            <div id="profilesearchimage" class="col-xs-4">
-                <img width="100px" src="Images/profilepics/chrisPP.jpg"/>
-            </div>
-            <div class="col-xs-8">
-                <h3 id="profilesearchtitle">Chris Dreyer</h3>
-            </div>
-        </div>
+<?php
+             $sql = "SELECT * FROM user WHERE username = 'jannie'";
+
+            $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+
+        echo '<a href="socialprofile.php?username='.$row["username"].'">';
+        echo '    <div id="profilesearchitem" class="row">';
+        echo '        <div id="profilesearchimage" class="col-xs-4">';
+        echo '            <img width="100px" src="Images/profilepics/'.$row["profilepic"].'"/>';
+        echo '        </div>';
+        echo '        <div class="col-xs-8">';
+        echo '            <h3 id="profilesearchtitle">'.$row["username"].'</h3>';
+        echo '        </div>';
+        echo '    </div>';
+        echo '</a>';
+        }
+        }
+
+?>
         <div class="row">
             <div id="searchdivider"></div>
             <h3 id="searchsuggestionheading">Trending</h3>
         </div>
-        <div id="profilesearchitem" class="row">
-            <div id="profilesearchimage" class="col-xs-4">
-                <img width="100px" src="Images/profilepics/chrisPP.jpg"/>
-            </div>
-            <div class="col-xs-8">
-                <h3 id="profilesearchtitle">Chris Dreyer</h3>
-            </div>
-        </div><div id="profilesearchitem" class="row">
-            <div id="profilesearchimage" class="col-xs-4">
-                <img width="100px" src="Images/profilepics/chrisPP.jpg"/>
-            </div>
-            <div class="col-xs-8">
-                <h3 id="profilesearchtitle">Chris Dreyer</h3>
-            </div>
-        </div>
+
+<?php
+      $sql = "SELECT * FROM user WHERE username LIKE '%".$_GET['peoplesearch']."%'";
+
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+        echo '<a href="socialprofile.php?username='.$row["username"].'">';
+        echo '    <div id="profilesearchitem" class="row">';
+        echo '        <div id="profilesearchimage" class="col-xs-4">';
+        echo '            <img width="100px" src="Images/profilepics/'.$row["profilepic"].'"/>';
+        echo '        </div>';
+        echo '        <div class="col-xs-8">';
+        echo '            <h3 id="profilesearchtitle">'.$row["username"].'</h3>';
+        echo '        </div>';
+        echo '    </div>';
+        echo '</a>';
+        }
+        }
+
+?>
     </body>
 </html>

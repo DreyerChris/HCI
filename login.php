@@ -1,4 +1,44 @@
 <!DOCTYPE html>
+
+<?php
+if(!empty($_POST['email']))
+    {
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "numetro";
+
+        $conn = new mysqli($servername, $username, $password,$dbname);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+
+        $sql = "SELECT * FROM user WHERE password = '".$_POST['password']."' AND email = '".$_POST['email']."'";
+         $result = $conn->query($sql);
+        
+         if($result == true)
+         {
+
+                session_start();
+                $userEmail = $_POST['email'];  
+                $_SESSION['email'] = $userEmail;
+            header("Location:index.php");
+            echo '<script language="javascript">';
+            echo 'alert("login succesfull")';
+            echo '</script>';
+            exit;
+          
+         }
+          else{
+            echo '<script language="javascript">';
+            echo 'alert("incorrect email and password combination")';
+            echo '</script>';
+          }
+    }
+
+?>
 <html>
     <head>
         <title>NuMetro Social</title>
@@ -23,7 +63,7 @@
         <div id="loginheading" class="col-xs-12">
             <h1 id="orangeheading">Log In</h1>
         </div>
-        <form id="loginform">
+        <form id="loginform" action="login.php" method="POST">
             <input type="text" name="email" id="forminput" placeholder="Email Address"><br>
             <input type="password" name="password" placeholder="Password" id="forminput" class="lastinput"><br>
             <button type="submit" class="quicklinkbtn">Log In</button>

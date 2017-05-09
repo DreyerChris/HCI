@@ -1,4 +1,21 @@
 <!DOCTYPE html>
+<?php
+    $user = $_GET['username'];
+    $user = urldecode($user);
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "numetro";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
 <html>
     <head>
         <title>NuMetro Social</title>
@@ -92,26 +109,40 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-xs-8">
-                <div id="profileimage" class="col-xs-4">
-                    <img width="180px" src="Images/profilepics/chrisPP.jpg"/>
-                </div>
-                <div class="col-xs-7">
-                    <div class="row">
-                        <h3 id="profilename">Chris Dreyer</h3>
-                    </div>
-                    <div class="row">
-                        <h5 id="profileinfo">Wonderboom, Pretoria</h5>
-                    </div>
-                    <div class="row">
-                        <h5 id="profileinfo">christiaandreyer@gmail.com</h5>
-                    </div>
-                    <div class="row">
-                        <h5 id="profileinfo">0764567324</h5>
-                    </div>
-                </div>
-            </div>
+
+<?php
+
+ $sql = "SELECT * FROM user WHERE username = '".$user."'";
+
+            $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+
+   echo' <div class="row">';
+    echo'        <div class="col-xs-8">';
+    echo'            <div id="profileimage" class="col-xs-4">';
+    echo'                <img width="180px" src="Images/profilepics/'.$row["profilepic"].'"/>';
+    echo'            </div>';
+    echo'            <div class="col-xs-7">';
+    echo'                <div class="row">';
+    echo'                    <h3 id="profilename">'.$row["username"].'</h3>';
+    echo'                </div>';
+   echo'                 <div class="row">';
+    echo'                    <h5 id="profileinfo">'.$row["suburb"].', '.$row["city"].'</h5>';
+    echo'                </div>';
+    echo'                <div class="row">';
+   echo'                     <h5 id="profileinfo">'.$row["email"].'</h5>';
+   echo'                 </div>';
+   echo'                 <div class="row">';
+    echo'                    <h5 id="profileinfo">'.$row["contact"].'</h5>';
+    echo'                </div>';
+   echo'             </div>';
+   echo'         </div>';
+
+        }
+        }
+?>
             <div class="col-xs-4">
                 <div id="numetrosocialpoints" class="row">
                     <div id="numetrosocialpointslogo" class="col-xs-4 col-xs-offset-1">
@@ -131,31 +162,33 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div id="searchdivider"></div>
-            <a href="socialprofile.php">
-                <div id="profilemenulink" class="col-xs-3">
-                    Feed
-                </div>
-            </a>
-            <a href="socialprofileabout.php">
-                <div id="profilemenulinkorange" class="col-xs-3">
-                    About
-                </div>
-            </a>
-            <a href="socialprofilefriends.php">
-                <div id="profilemenulink" class="col-xs-3">
-                    Friends
-                </div>
-            </a>
-            <a href="socialprofilewatched.php">
-                <div id="profilemenulink" class="col-xs-3">
-                    Watched
-                </div>
-            </a>
-            <div id="searchdivider2"></div>
-            <h3 id="searchsuggestionheading">Feed</h3>
-        </div>
+<?php
+     echo'   <div class="row">';
+     echo'        <div id="searchdivider"></div>';
+     echo'        <a href="socialprofile.php?username='.$user.'">';
+     echo'            <div id="profilemenulinkorange" class="col-xs-3">';
+     echo'                Feed';
+     echo'            </div>';
+     echo'        </a>';
+     echo'        <a href="socialprofileabout.php?username='.$user.'">';
+     echo'            <div id="profilemenulink" class="col-xs-3">';
+     echo'                About';
+     echo'            </div>';
+     echo'        </a>';
+     echo'        <a href="socialprofilefriends.php?username='.$user.'">';
+     echo'            <div id="profilemenulink" class="col-xs-3">';
+     echo'                Friends';
+     echo'            </div>';
+     echo'        </a>';
+     echo'        <a href="socialprofilewatched.php?username='.$user.'">';
+     echo'            <div id="profilemenulink" class="col-xs-3">';
+     echo'                Watched';
+     echo'            </div>';
+     echo'        </a>';
+     echo'        <div id="searchdivider2"></div>';
+     echo'        <h3 id="searchsuggestionheading">Feed</h3>';
+     echo'    </div> ';
+?>
         <div id="likes" class="row">
             <div class="col-xs-4">
                 <span id="genreicon" class="fa fa-map-o fa-4x"></span>
