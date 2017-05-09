@@ -3,6 +3,7 @@
     $user = $_GET['username'];
     $user = urldecode($user);
 
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -15,6 +16,13 @@ $conn = new mysqli($servername, $username, $password,$dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
+
+
+    if(!empty($_POST['comment']))
+    {
+        $sql = "INSERT INTO `comments` (`heading`, `username`, `comment`) VALUES ('".$_POST['heading']."', '".$_POST['username']."', '".$_POST['comment']."')";
+        $result = $conn->query($sql);   
+    }
 ?>
 <html>
     <head>
@@ -93,31 +101,33 @@ if ($conn->connect_error) {
         <div id="numetrosocialheader" class="col-xs-12">
             <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
-        <div class="row">
-            <div id="linkbar" class="col-xs-12">
-                <a href="socialfeed.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>
-                    </div>
-                </a>
-                <a href="socialmoviesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-film"></span>
-                    </div>
-                </a>
-                <a href="socialpeoplesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>
-                    </div>
-                </a>
-                <a href="profilesettings.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-cog"></span>
-                    </div>
-                </a>
-            </div>
-        </div>
 
+<?php
+    echo '   <div class="row"> ';
+     echo '       <div id="linkbar" class="col-xs-12">';
+     echo '           <a href="socialfeed.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '           <a href="socialmoviesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+      echo '                  <span id="sociallink" class="glyphicon glyphicon-film"></span>';
+      echo '              </div>';
+      echo '          </a>';
+      echo '          <a href="socialpeoplesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>';
+      echo '              </div>';
+     echo '           </a>';
+      echo '          <a href="profilesettings.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-cog"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '       </div>';
+    echo '    </div>';
+?>
 <?php
 
              $sql = "SELECT * FROM user WHERE username = '".$user."'";
@@ -258,10 +268,14 @@ if ($conn->connect_error) {
          echo'   <div id="commentcontainer" class="row">';
         echo'        <div id="commentprofilepic" class="col-xs-2"><img height="80px" width="80px" src="Images/profilepics/0.jpg"></div>';
          echo'       <div id="commentcontent" class="col-xs-10">';
-         echo'           <input type="text" id="makeacomment" placeholder="Write a comment...<span id=';
-         echo "'commentcamera'";
+         echo'          <form method=POST>';
+         echo'           <input type="text" name="comment" id="makeacomment" placeholder="Write a comment..."<span id=';
+         echo '"commentcamera"';
          echo "class='glyphicon glyphicon-camera'>";
-         echo '</span>"/>';
+         echo '</span>';
+        echo '         <input type="hidden" name="heading" value="'.$row["heading"].'">'; 
+        echo '         <input type="hidden" name="username" value="'.$user.'">'; 
+        echo'          </form >';
         echo'        </div>';
         echo'    </div>';
 
