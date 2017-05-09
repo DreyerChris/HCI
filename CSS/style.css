@@ -162,6 +162,23 @@ button.ghostbuttonwhite {
     margin-bottom: 50px;
 }
 
+button.editpersonalinfo {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0px;
+  font-family: Arial;
+  color: white;
+  font-size: 30px;
+  background: transparent;
+    border: 5px solid white;
+  padding: 0px 100px 0px 100px;
+  text-decoration: none;
+    height: 70px;
+    width: 600px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
 button.blackghostbutton {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -1027,6 +1044,216 @@ input#makecomment{
     margin-top: 30px;
     height: 258px;
     overflow: hidden;
+}
+
+input.searchbox{
+    background-color: transparent;
+    border: 5px solid white;
+    height: 80px;
+    width: 900px;
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    padding: 15px;
+    font-family: 'Roboto', FontAwesome;
+    margin-bottom: 40px;
+}
+
+#searchdivider{
+    height: 4px;
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+h3#searchsuggestionheading{
+    color: white;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+h3#searchsuggestionheadingorange{
+    color: #ff4e00;
+    font-weight: 100;
+    font-size: 40px;
+    text-align: left;
+    margin-left: 40px;
+}
+
+#moviesearchitem{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+#watcheditem{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+#moviesearchimage{
+    width: 300px;
+    height: 100px;
+    overflow: hidden;
+}
+
+#moviesearchtitle{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 35px;
+    text-align: left;
+    color: #ff4e00;
+}
+
+#watchedtitle{
+    margin-left: 20px;
+    margin-bottom: 3px;
+    font-size: 35px;
+    text-align: left;
+    color: #ff4e00;
+    margin-top: 0px;
+}
+
+#profilesearchitem{
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+#profilesearchimage{
+    width: 100px;
+    height: 100px;
+}
+
+#profilesearchtitle{
+    margin-top: 30px;
+    margin-left: 20px;
+    font-size: 35px;
+    text-align: left;
+    color: #ff4e00;
+}
+
+#profileimage{
+    margin-left: 30px;
+    margin-top: 40px;
+    position: relative;
+}
+
+#profilename{
+    font-size: 45px;
+    text-align: left;
+    color: #ff4e00;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+#profileinfo{
+    color: white;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+#numetrosocialpointslogo{
+    
+}
+
+#numetrosocialpoints{
+    margin-top: 50px;
+}
+
+#numetrosocialpointsamount{
+    font-size: 55px;
+    color: white;
+    text-align: left;
+    margin-top: 0px;
+}
+
+#friendfunction{
+    color: lightgray;
+    opacity: 0.2;
+}
+
+#friendfunctionorange{
+    color: #ff4e00;
+}
+
+#addremovefriend{
+    margin-top: 30px;
+}
+
+#profilemenulink{
+    font-size: 35px;
+    color: white;
+}
+
+#profilemenulinkorange{
+    font-size: 35px;
+    color: #ff4e00;
+}
+
+#searchdivider2{
+    height: 4px;
+    background-color: white;
+    margin-top: 85px;
+    margin-bottom: 20px;
+}
+
+#genreicon{
+    color: #ff4e00;
+}
+
+#genreremove{
+    color: #ff4e00;
+}
+
+#genreadd{
+    color: lightgray;
+}
+
+#likes{
+    margin-top: 40px;
+}
+
+#genrelike{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 40px;
+}
+
+#editphoto{
+    position: absolute;
+    margin-left: 5px;
+    background-color: white;
+    width: 175px;
+    top: 60px;
+    height: 60px;
+    font-size: 40px;
+    opacity: 0.7;
+    font-weight: 800;
+}
+
+#removefriend{
+    padding-top: 20px;
+}
+
+#removefriendicon{
+    color: white;
+}
+
+#watchedinfo{
+    color: lightgray;
+    font-size: 25px;
+    margin-top: 0px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 3px;
 }
 
 
