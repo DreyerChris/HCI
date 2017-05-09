@@ -133,20 +133,28 @@
         </div>
         <div class="row">
             <div id="searchdivider"></div>
-            <div id="profilemenulink" class="col-xs-3">
-                Feed
-            </div>
-            <div id="profilemenulinkorange" class="col-xs-3">
-                About
-            </div>
-            <div id="profilemenulink" class="col-xs-3">
-                Friends
-            </div>
-            <div id="profilemenulink" class="col-xs-3">
-                Watched
-            </div>
+            <a href="socialprofile.php">
+                <div id="profilemenulink" class="col-xs-3">
+                    Feed
+                </div>
+            </a>
+            <a href="socialprofileabout.php">
+                <div id="profilemenulinkorange" class="col-xs-3">
+                    About
+                </div>
+            </a>
+            <a href="socialprofilefriends.php">
+                <div id="profilemenulink" class="col-xs-3">
+                    Friends
+                </div>
+            </a>
+            <a href="socialprofilewatched.php">
+                <div id="profilemenulink" class="col-xs-3">
+                    Watched
+                </div>
+            </a>
             <div id="searchdivider2"></div>
-            <h3 id="searchsuggestionheading">Likes</h3>
+            <h3 id="searchsuggestionheading">Feed</h3>
         </div>
         <div id="likes" class="row">
             <div class="col-xs-4">

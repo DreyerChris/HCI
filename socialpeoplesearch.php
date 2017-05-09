@@ -78,18 +78,26 @@
         </div>
         <div class="row">
             <div id="linkbar" class="col-xs-12">
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>
-                </div>
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallink" class="glyphicon glyphicon-film"></span>
-                </div>
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>
-                </div>
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallink" class="glyphicon glyphicon-cog"></span>
-                </div>
+                <a href="socialfeed.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>
+                    </div>
+                </a>
+                <a href="socialmoviesearch.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallink" class="glyphicon glyphicon-film"></span>
+                    </div>
+                </a>
+                <a href="socialpeoplesearch.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>
+                    </div>
+                </a>
+                <a href="profilesettings.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallink" class="glyphicon glyphicon-cog"></span>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="row">
@@ -97,14 +105,16 @@
             <div id="searchdivider"></div>
             <h3 id="searchsuggestionheading">Recent Searches</h3>
         </div>
-        <div id="profilesearchitem" class="row">
-            <div id="profilesearchimage" class="col-xs-4">
-                <img width="100px" src="Images/profilepics/chrisPP.jpg"/>
+        <a href="socialprofile.php">
+            <div id="profilesearchitem" class="row">
+                <div id="profilesearchimage" class="col-xs-4">
+                    <img width="100px" src="Images/profilepics/chrisPP.jpg"/>
+                </div>
+                <div class="col-xs-8">
+                    <h3 id="profilesearchtitle">Chris Dreyer</h3>
+                </div>
             </div>
-            <div class="col-xs-8">
-                <h3 id="profilesearchtitle">Chris Dreyer</h3>
-            </div>
-        </div>
+        </a>
         <div id="profilesearchitem" class="row">
             <div id="profilesearchimage" class="col-xs-4">
                 <img width="100px" src="Images/profilepics/chrisPP.jpg"/>

@@ -22,12 +22,14 @@
             <div class="col-xs-10 col-xs-offset-2" id="navbartext">NuMetro</div>
         </div>
         <div id="menu" style="z-index: -1;">
-            <div id="menurowfirst" class="row">
-                <div id="menulinkcontainer" class="col-xs-12">
-                    <div id="menulinkicon" class="col-xs-3"><img height="70px" width="110px" src="Images/Logos/numetrosocialsmall.png"/></div>
-                    <div id="menulinklink" class="col-xs-9"><a id="menulink"><span id="orangemenulink">NuMetro Social</span></a></div>
+            <a href="socialfeed.php">
+                <div id="menurowfirst" class="row">
+                    <div id="menulinkcontainer" class="col-xs-12">
+                        <div id="menulinkicon" class="col-xs-3"><img height="70px" width="110px" src="Images/Logos/numetrosocialsmall.png"/></div>
+                        <div id="menulinklink" class="col-xs-9"><span id="orangemenulink">NuMetro Social</span></div>
+                    </div>
                 </div>
-            </div>
+            </a>
             <div id="menurow" class="row">
                 <div id="menulinkcontainer" class="col-xs-12">
                     <div id="menulinkicon" class="col-xs-3"><span class="glyphicon glyphicon-arrow-down"></span></div>

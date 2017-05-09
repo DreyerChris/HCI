@@ -78,18 +78,26 @@
         </div>
         <div class="row">
             <div id="linkbar" class="col-xs-12">
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>
-                </div>
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallink" class="glyphicon glyphicon-film"></span>
-                </div>
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallink" class="glyphicon glyphicon-user"></span>
-                </div>
-                <div id="sociallinkcontainer" class="col-xs-3">
-                    <span id="sociallinkorange" class="glyphicon glyphicon-cog"></span>
-                </div>
+                <a href="socialfeed.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>
+                    </div>
+                </a>
+                <a href="socialmoviesearch.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallink" class="glyphicon glyphicon-film"></span>
+                    </div>
+                </a>
+                <a href="socialpeoplesearch.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallink" class="glyphicon glyphicon-user"></span>
+                    </div>
+                </a>
+                <a href="profilesettings.php">
+                    <div id="sociallinkcontainer" class="col-xs-3">
+                        <span id="sociallinkorange" class="glyphicon glyphicon-cog"></span>
+                    </div>
+                </a>
             </div>
         </div>
         <div class="row">
@@ -129,16 +137,23 @@
         </div>
         <div class="row">
             <div id="searchdivider"></div>
-            <div id="profilemenulink" class="col-xs-4">
-                About
-            </div>
-            <div id="profilemenulink" class="col-xs-4">
-                Friends
-            </div>
-            <div id="profilemenulinkorange" class="col-xs-4">
-                Watched
-            </div>
+            <a href="profilesettings.php">
+                <div id="profilemenulink" class="col-xs-4">
+                    About
+                </div>
+            </a>
+            <a href="profilesettingsfriends.php">
+                <div id="profilemenulink" class="col-xs-4">
+                    Friends
+                </div>
+            </a>
+            <a href="profilesettingswatched.php">
+                <div id="profilemenulinkorange" class="col-xs-4">
+                    Watched
+                </div>
+            </a>
             <div id="searchdivider2"></div>
+            <h3 id="searchsuggestionheadingorange">Likes</h3>
         </div>
         <div class="row">
             <input class="searchbox" placeholder="Search for movies...&#9;&#9;&#9;&#9;&#9;&#9;&#9;       &#xF002;"/>
