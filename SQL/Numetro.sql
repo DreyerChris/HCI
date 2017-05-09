@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 10, 2017 at 12:03 AM
+-- Generation Time: May 10, 2017 at 01:14 AM
 -- Server version: 10.1.10-MariaDB
 -- PHP Version: 5.6.19
 
@@ -38,7 +38,9 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`index`, `heading`, `username`, `comment`) VALUES
-(1, 'Pieter watched and commented on', 'Pieter Bezuidenhout', 'Excellent movie!! 10/10 Would watch again!');
+(1, 'Pieter watched and commented on', 'Pieter Bezuidenhout', 'Excellent movie!! 10/10 Would watch again!'),
+(2, 'Pieter watched and commented on', 'jannie', 'I agree man'),
+(3, 'Pieter watched and commented on\r\n', 'Carol', 'It was okay I suppose...');
 
 -- --------------------------------------------------------
 
@@ -145,6 +147,15 @@ ALTER TABLE `movie`
 ALTER TABLE `user`
   ADD PRIMARY KEY (`username`);
 
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `index` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
