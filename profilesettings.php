@@ -1,4 +1,23 @@
 <!DOCTYPE html>
+<?php
+    $user = $_GET['username'];
+    $user = urldecode($user);
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "numetro";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+?>
+
+
 <html>
     <head>
         <title>NuMetro Social</title>
@@ -76,51 +95,65 @@
         <div id="numetrosocialheader" class="col-xs-12">
             <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
-        <div class="row">
-            <div id="linkbar" class="col-xs-12">
-                <a href="socialfeed.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>
-                    </div>
-                </a>
-                <a href="socialmoviesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-film"></span>
-                    </div>
-                </a>
-                <a href="socialpeoplesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-user"></span>
-                    </div>
-                </a>
-                <a href="profilesettings.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallinkorange" class="glyphicon glyphicon-cog"></span>
-                    </div>
-                </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-8">
-                <div id="profileimage" class="col-xs-4">
-                    <img width="180px" src="Images/profilepics/chrisPP.jpg"/>
-                    <div id="editphoto">Edit</div>
-                </div>
-                <div class="col-xs-7">
-                    <div class="row">
-                        <h3 id="profilename">Chris Dreyer</h3>
-                    </div>
-                    <div class="row">
-                        <h5 id="profileinfo">Wonderboom, Pretoria</h5>
-                    </div>
-                    <div class="row">
-                        <h5 id="profileinfo">christiaandreyer@gmail.com</h5>
-                    </div>
-                    <div class="row">
-                        <h5 id="profileinfo">0764567324</h5>
-                    </div>
-                </div>
-            </div>
+     <?php
+    echo '   <div class="row"> ';
+     echo '       <div id="linkbar" class="col-xs-12">';
+     echo '           <a href="socialfeed.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '           <a href="socialmoviesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+      echo '                  <span id="sociallink" class="glyphicon glyphicon-film"></span>';
+      echo '              </div>';
+      echo '          </a>';
+      echo '          <a href="socialpeoplesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>';
+      echo '              </div>';
+     echo '           </a>';
+      echo '          <a href="profilesettings.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-cog"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '       </div>';
+    echo '    </div>';
+?>
+
+<?php
+
+             $sql = "SELECT * FROM user WHERE username = '".$user."'";
+
+            $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+    echo' <div class="row">';
+    echo'        <div class="col-xs-8">';
+    echo'            <div id="profileimage" class="col-xs-4">';
+    echo'                <img width="180px" src="Images/profilepics/'.$row["profilepic"].'"/>';
+    echo'             <div id="editphoto">Edit</div>';
+    echo'            <div class="col-xs-7">';
+    echo'                <div class="row">';
+    echo'                    <h3 id="profilename">'.$row["username"].'</h3>';
+    echo'                </div>';
+   echo'                 <div class="row">';
+    echo'                    <h5 id="profileinfo">'.$row["suburb"].', '.$row["city"].'</h5>';
+    echo'                </div>';
+    echo'                <div class="row">';
+   echo'                     <h5 id="profileinfo">'.$row["email"].'</h5>';
+   echo'                 </div>';
+   echo'                 <div class="row">';
+    echo'                    <h5 id="profileinfo">'.$row["contact"].'</h5>';
+    echo'                </div>';
+   echo'             </div>';
+   echo'         </div>';
+
+        }
+        }
+?>
             <div class="col-xs-4">
                 <div id="numetrosocialpoints" class="row">
                     <div id="numetrosocialpointslogo" class="col-xs-4 col-xs-offset-1">
