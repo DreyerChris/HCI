@@ -14,7 +14,8 @@
     </head>
     <body class="main">
         <div id="navbar">
-            <div class="col-xs-10 col-xs-offset-1" id="navbartext"><?php echo $_SESSION["movie"];?> at <?php echo $_SESSION["cinema"];?></div>
+            <a id="backbtn"><div class="col-xs-1 col-xs-offset-1" id="backbtn"><span class="glyphicon glyphicon-menu-left"></span></div></a>
+            <div class="col-xs-9" id="navbartext"><?php echo $_SESSION["movie"];?> at <?php echo $_SESSION["cinema"];?></div>
             <a href="index.php"><div id="closelink" class="col-xs-1"><span class="glyphicon glyphicon-remove"></span></div></a>
         </div>
         <div id="snacksheadingbar" class="col-xs-12">

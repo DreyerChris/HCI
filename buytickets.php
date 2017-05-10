@@ -13,7 +13,7 @@
     </head>
     <body class="white">
         <div id="navbar">
-            <div id="iconbar" class="col-xs-2"></div>
+            <a href="index.php"><div class="col-xs-1 col-xs-offset-1" id="backbtn"><span class="glyphicon glyphicon-menu-left"></span></div></a>
             <div class="col-xs-10" id="navbartext">NuMetro</div>
         </div>
         <div class="row">

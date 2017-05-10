@@ -69,7 +69,7 @@
             <div id="menurow" class="row">
                 <div id="menulinkcontainer" class="col-xs-12">
                     <div id="menulinkicon" class="col-xs-3"><span class="glyphicon glyphicon-log-out"></span></div>
-                    <div id="menulinklink" class="col-xs-9"><a id="menulink">Exit</a></div>
+                    <div id="menulinklink" class="col-xs-9"><a id="menulink" href="logout.php">Logout</a></div>
                 </div>
             </div>
         

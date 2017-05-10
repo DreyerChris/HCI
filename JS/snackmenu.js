@@ -1,3 +1,7 @@
+document.getElementById("backbtn").onclick = function(){
+    window.history.back();
+};
+
 var popcornsubtotal = 0.00;
 var sodasubtotal = 0.00;
 var grandtotal = 0.00;
