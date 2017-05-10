@@ -1260,5 +1260,37 @@ h3#searchsuggestionheadingorange{
     margin-bottom: 3px;
 }
 
+#removeorder{
+    color: white;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#ordername{
+    text-align: left;
+    font-size: 45px;
+    color: white;
+}
+
+#orderprice{
+    color: #ff4e00;
+    font-size: 45px;
+}
+
+#randomspace{
+    margin-top: 300px;
+}
+
+#orderline{
+}
+
+#orderdivider{
+    height: 4px;
+    background-color: white;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 
 

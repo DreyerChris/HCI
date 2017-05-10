@@ -5,6 +5,7 @@
         <title>Choose your snacks</title>
         <link rel="stylesheet" href="CSS/style.css"/>
         <link rel="shortcut icon" href="Images/Favicon/favicon.ico" type="image/ico">
+        <script src="https://use.fontawesome.com/727ae44ffb.js"></script>
         <script
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -19,6 +20,30 @@
         </div>
         <div id="snacksheadingbar" class="col-xs-12">
             Review your order information
+        </div>
+        <div id="randomspace"></div>
+        <div id="orderline" class="row">
+            <div class="col-xs-1"><span id="removeorder" class="fa fa-times fa-4x"></span></div>
+            <div class="col-xs-8">
+                <h3 id="ordername">5x movie tickets for John Wick at Boardwalk 18:00 15 April</h3>
+            </div>
+            <div class="col-xs-3">
+                <h3 id="orderprice">R220.95</h3>
+            </div>
+            <div id="orderdivider" class="col-xs-12"></div>
+        </div>
+        <div id="orderline" class="row">
+            <div class="col-xs-1"><span id="removeorder" class="fa fa-times fa-4x"></span></div>
+            <div class="col-xs-8">
+                <h3 id="ordername">Snacks</h3>
+            </div>
+            <div class="col-xs-3">
+                <h3 id="orderprice">R320.95</h3>
+            </div>
+            <div id="orderdivider" class="col-xs-12"></div>
+        </div>
+        <div id="snacktotalbar" class="col-xs-12">
+            Total R<span id="totalnumber">0.00</span>
         </div>
     </body>
 </html>
