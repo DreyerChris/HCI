@@ -73,14 +73,11 @@ CREATE TABLE `movie` (
   `nameMovie` varchar(100) NOT NULL,
   `image` varchar(100) NOT NULL,
   `rating` float UNSIGNED NOT NULL,
-  `ageRestriction` int(5) NOT NULL,
-  `releaseDate` date NOT NULL,
   `ageRestriction` varchar(100) NOT NULL,
   `releaseDate` varchar(100) NOT NULL,
   `Director` varchar(100) NOT NULL,
   `Music` varchar(100) NOT NULL,
   `runningTime` varchar(10) NOT NULL,
-  `synopsis` varchar(500) NOT NULL
   `synopsis` varchar(500) NOT NULL,
   `IMDB` varchar(1000) NOT NULL,
   `youtube` varchar(1000) NOT NULL,
@@ -92,12 +89,6 @@ CREATE TABLE `movie` (
 -- Dumping data for table `movie`
 --
 
-INSERT INTO `movie` (`nameMovie`, `image`, `rating`, `ageRestriction`, `releaseDate`, `Director`, `Music`, `runningTime`, `synopsis`) VALUES
-('Chips', '3.jpg', 5, 13, '2017-03-24', '', '', '', ''),
-('John Wick', '2.jpg', 7, 16, '2017-03-07', '', '', '', ''),
-('Kong Skull island', '4.jpg', 8.5, 16, '2017-03-10', 'Some Guy', 'another guy', '2hr20min', 'Big giant monkey wrecks some shit on an island full of skulls lol, 10/10 would watch again.'),
-('LaLaLand', '', 8.4, 13, '2017-01-27', '', '', '', ''),
-('Miss Sloane', '5.jpg', 6.8, 13, '2017-03-17', '', '', '', '');
 INSERT INTO `movie` (`nameMovie`, `image`, `rating`, `ageRestriction`, `releaseDate`, `Director`, `Music`, `runningTime`, `synopsis`, `IMDB`, `youtube`, `blurb`, `genre`) VALUES
 ('Chips', '3.jpg', 6, 'R18', '6 April', 'Dax Shepard', 'Hanz Zimmer', '1hr 20min', 'A rookie officer is teamed with a hardened pro at the California Highway Patrol, though the newbie soon learns his partner is really an undercover Fed investigating a heist that may involved some crooked cops.', 'http://www.imdb.com/title/tt0493405/?ref_=fn_al_tt_1', 'https://www.youtube.com/embed/FKlbX-t9GLg', 'Funny South African Movie', 'Comedy'),
 ('John Wick', '2.jpg', 8, 'R18', '7 March', 'Chad Stahelski', 'Hanz Zimmer', '2h 2min', 'After returning to the criminal underworld to repay a debt, John Wick discovers that a large bounty has been put on his life.', 'http://www.imdb.com/title/tt4425200/?ref_=nv_sr_1', 'https://www.youtube.com/embed/XGk2EfbD_Ps', 'Legendary assassin John Wick', 'Action'),
