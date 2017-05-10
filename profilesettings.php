@@ -1,5 +1,17 @@
 <!DOCTYPE html>
 <?php
+
+session_start();
+if(empty($_SESSION["username"])) 
+{
+     header("Location:login.php");
+}
+else
+{
+    
+    $currentUser = $_SESSION["username"];
+}
+
     $user = $_GET['username'];
     $user = urldecode($user);
 

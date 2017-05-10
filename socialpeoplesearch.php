@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 <?php
+session_start();
+if(empty($_SESSION["username"])) 
+{
+     header("Location:login.php");
+}
+else
+{
+    
+    $user = $_SESSION["username"];
+}
+
 
 if(!empty($_GET['peoplesearch']))
     {
@@ -98,30 +109,32 @@ if ($conn->connect_error) {
         <div id="numetrosocialheader" class="col-xs-12">
             <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
-        <div class="row">
-            <div id="linkbar" class="col-xs-12">
-                <a href="socialfeed.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>
-                    </div>
-                </a>
-                <a href="socialmoviesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-film"></span>
-                    </div>
-                </a>
-                <a href="socialpeoplesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>
-                    </div>
-                </a>
-                <a href="profilesettings.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-cog"></span>
-                    </div>
-                </a>
-            </div>
-        </div>
+<?php
+    echo '   <div class="row"> ';
+     echo '       <div id="linkbar" class="col-xs-12">';
+     echo '           <a href="socialfeed.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '           <a href="socialmoviesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+      echo '                  <span id="sociallink" class="glyphicon glyphicon-film"></span>';
+      echo '              </div>';
+      echo '          </a>';
+      echo '          <a href="socialpeoplesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>';
+      echo '              </div>';
+     echo '           </a>';
+      echo '          <a href="profilesettings.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-cog"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '       </div>';
+    echo '    </div>';
+?>
         <div class="row">
         <form action="socialpeoplesearch.php" method="GET">
             <input class="searchbox" name="peoplesearch" placeholder="Search for people...&#9;&#9;&#9;&#9;&#9;&#9;&#9;       &#xF002;"/>
@@ -157,7 +170,15 @@ if ($conn->connect_error) {
         </div>
 
 <?php
-      $sql = "SELECT * FROM user WHERE username LIKE '%".$_GET['peoplesearch']."%'";
+if(!empty($_GET['peoplesearch']))
+{
+     $sql = "SELECT * FROM user WHERE username LIKE '%".$_GET['peoplesearch']."%'";
+}
+else
+{
+     $sql = "SELECT * FROM user";
+}
+     
 
         $result = $conn->query($sql);
 

@@ -1,4 +1,46 @@
 <!DOCTYPE html>
+<?php
+if(!empty($_POST['username']))
+    {
+
+        if($_POST['password'] != $_POST['password2'])
+        {
+            echo '<script language="javascript">';
+            echo 'alert("password missmatch")';
+            echo '</script>';
+        }
+
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "numetro";
+
+        $conn = new mysqli($servername, $username, $password,$dbname);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "INSERT INTO `user` (`username`, `password`, `email`, `suburb`, `city`, `contact`, `profilepic`) VALUES ('".$_POST['username']."', '".$_POST['password']."', '".$_POST['email']."', '".$_POST['suburb']."', '".$_POST['city']."', '".$_POST['contactnumber']."', '0.jpg')";
+        $result = $conn->query($sql);
+
+        if ($result == false) {
+            echo '<script language="javascript">';
+            echo 'alert("signup error")';
+            echo '</script>';
+        }
+        else{
+            session_start();
+            $userName = $_POST['username'];  
+            $_SESSION['username'] = $userName;
+            header("Location:index.php");
+            echo '<script language="javascript">';
+            echo 'alert("signup succesfull")';
+            echo '</script>';
+            exit;
+        }
+    }
+?>
 <html>
     <head>
         <title>NuMetro Social</title>
@@ -23,7 +65,7 @@
         <div id="loginheading" class="col-xs-12">
             <h1 id="orangeheading">Sign Up</h1>
         </div>
-        <form id="loginform">
+        <form id="loginform" action="signup.php" method="POST">
             <input type="text" name="username" id="forminput" placeholder="Username"><br>
             <input type="text" name="email" id="forminput" placeholder="Email Address"><br>
             <input type="password" name="password" placeholder="Password" id="forminput"><br>

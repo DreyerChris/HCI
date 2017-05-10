@@ -1,4 +1,39 @@
 <!DOCTYPE html>
+<?php
+session_start();
+if(empty($_SESSION["username"])) 
+{
+     header("Location:login.php");
+}
+else
+{
+    
+    $user = $_SESSION["username"];
+}
+   
+
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "numetro";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password,$dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+
+    if(!empty($_POST['comment']))
+    {
+        $sql = "INSERT INTO `comments` (`heading`, `username`, `comment`) VALUES ('".$_POST['heading']."', '".$_POST['username']."', '".$_POST['comment']."')";
+        $result = $conn->query($sql);   
+    }
+?>
+
 <html>
     <head>
         <title>NuMetro Social</title>
@@ -74,67 +109,111 @@
         <div id="numetrosocialheader" class="col-xs-12">
             <img height="120px" width="340px" src="Images/Logos/numetrosocial.png"/>
         </div>
-        <div class="row">
-            <div id="linkbar" class="col-xs-12">
-                <a href="socialfeed.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallinkorange" class="glyphicon glyphicon-list-alt"></span>
-                    </div>
-                </a>
-                <a href="socialmoviesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-film"></span>
-                    </div>
-                </a>
-                <a href="socialpeoplesearch.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-user"></span>
-                    </div>
-                </a>
-                <a href="profilesettings.php">
-                    <div id="sociallinkcontainer" class="col-xs-3">
-                        <span id="sociallink" class="glyphicon glyphicon-cog"></span>
-                    </div>
-                </a>
-            </div>
-        </div>
+
+<?php
+    echo '   <div class="row"> ';
+     echo '       <div id="linkbar" class="col-xs-12">';
+     echo '           <a href="socialfeed.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-list-alt"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '           <a href="socialmoviesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+      echo '                  <span id="sociallink" class="glyphicon glyphicon-film"></span>';
+      echo '              </div>';
+      echo '          </a>';
+      echo '          <a href="socialpeoplesearch.php?username='.$user.'">';
+      echo '              <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallinkorange" class="glyphicon glyphicon-user"></span>';
+      echo '              </div>';
+     echo '           </a>';
+      echo '          <a href="profilesettings.php?username='.$user.'">';
+     echo '               <div id="sociallinkcontainer" class="col-xs-3">';
+     echo '                   <span id="sociallink" class="glyphicon glyphicon-cog"></span>';
+     echo '               </div>';
+     echo '           </a>';
+     echo '       </div>';
+    echo '    </div>';
+?>
+
         <div id="feeditem" class="row">
-            <div class="row">
-                <div id="feedheading">Pieter watched and commented on:</div>
-                <div id="feedheadingline"></div>
-                <div id="feedheadingdate">25 Feb at 7:22 am</div>
-            </div>
-            <div class="row">
-                <a href="socialmovie.php"><div id="feedmovieimage"><img width="900px" src="Images/Carousel/3.jpg"></div></a>
-            </div>
-            <div id="likescommentscontainer" class="row">
-                <div id="feedlikes" class="col-xs-6">17 Likes</div>
-                <div id="feedcomments" class="col-xs-6">1 Comment</div>
-            </div>
-            <div class="row">
-                <div class="row">
-                    <div id="likecommentshareline"></div>
-                </div>
-                <div id="likecommentshare" class="col-xs-4">Like</div>
-                <div id="likecommentshare" class="col-xs-4">Comment</div>
-                <div id="likecommentshare" class="col-xs-4">Share</div>
-                <div class="row">
-                    <div id="likecommentshareline2"></div>
-                </div>
-            </div>
-            <div id="commentcontainer" class="row">
-                <div id="commentprofilepic" class="col-xs-2"><img height="120px" width="120px" src="Images/profilepics/jaco.jpg"></div>
-                <div id="commentcontent" class="col-xs-10">
-                    <h2 id="commentername">Pieter Bezuidenhout</h2>
-                    <p id="comment">Excellent movie!! 10/10 Would watch again!</p>
-                </div>
-            </div>
-            <div id="commentcontainer" class="row">
-                <div id="commentprofilepic" class="col-xs-2"><img height="80px" width="80px" src="Images/profilepics/1.jpg"></div>
-                <div id="commentcontent" class="col-xs-10">
-                    <input type="text" id="makeacomment" placeholder="Write a comment...<span id='commentcamera' class='glyphicon glyphicon-camera'></span>"/>
-                </div>
-            </div>
+<?php
+        $sql = "SELECT * FROM feed";
+
+            $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()){
+
+            $heading = $row["heading"];
+            
+       echo'  <div id="feeditem" class="row">';
+       echo'      <div class="row">';
+       echo'          <div id="feedheading">'.$row["heading"].':</div>';
+       echo'          <div id="feedheadingline"></div>';
+       echo'          <div id="feedheadingdate">'.$row["feedDate"].'</div>';
+        echo'     </div>';
+        echo'     <div class="row">';
+        echo'         <a href="socialmovie.php"><div id="feedmovieimage"><img width="900px" src="Images/Carousel/'.$row["movie"].'"></div></a>';
+        echo'     </div>';
+        echo'     <div id="likescommentscontainer" class="row">';
+        echo'         <div id="feedlikes" class="col-xs-6">'.$row["likes"].' Likes</div>';
+        echo'         <div id="feedcomments" class="col-xs-6">'.$row["numComments"].' Comment</div>';
+         echo'    </div>';
+         echo'    <div class="row">';
+          echo'       <div class="row">';
+         echo'            <div id="likecommentshareline"></div>';
+         echo'        </div>';
+         echo'        <div id="likecommentshare" class="col-xs-4">Like</div>';
+         echo'        <div id="likecommentshare" class="col-xs-4">Comment</div>';
+         echo'        <div id="likecommentshare" class="col-xs-4">Share</div>';
+         echo'        <div class="row">';
+          echo'           <div id="likecommentshareline2"></div>';
+          echo'       </div>';
+         echo'   </div>';
+
+        $sql2 = "SELECT * FROM comments WHERE heading = '".$row["heading"]."'ORDER BY 'index' DESC";
+        $result2 = $conn->query($sql2);
+
+        if ($result2->num_rows > 0) {
+        while($row2 = $result2->fetch_assoc()){
+
+            $sql3 = "SELECT * FROM user WHERE username = '".$row2["username"]."'";
+            $result3 = $conn->query($sql3);
+
+            if ($result3->num_rows > 0) {
+            while($row3 = $result3->fetch_assoc()){
+                $picture = $row3["profilepic"];
+            }}
+        echo'  <div id="commentcontainer" class="row">';
+         echo'       <div id="commentprofilepic" class="col-xs-2"><img height="120px" width="120px" src="Images/profilepics/'.$picture.'"></div>';
+         echo'       <div id="commentcontent" class="col-xs-10">';
+         echo'           <h2 id="commentername">'.$row2["username"].'</h2>';
+         echo'           <p id="comment">'.$row2["comment"].'</p>';
+        echo'        </div>';
+         echo'   </div>';
+
+        }}
+         echo'   <div id="commentcontainer" class="row">';
+        echo'        <div id="commentprofilepic" class="col-xs-2"><img height="80px" width="80px" src="Images/profilepics/0.jpg"></div>';
+         echo'       <div id="commentcontent" class="col-xs-10">';
+         echo'          <form method=POST>';
+         echo'           <input type="text" name="comment" id="makeacomment" placeholder="Write a comment..."<span id=';
+         echo '"commentcamera"';
+         echo "class='glyphicon glyphicon-camera'>";
+         echo '</span>';
+        echo '         <input type="hidden" name="heading" value="'.$row["heading"].'">'; 
+        echo '         <input type="hidden" name="username" value="'.$user.'">'; 
+        echo'          </form >';
+        echo'        </div>';
+        echo'    </div>';
+
+
+        }
+        }
+
+?>
         </div>
     </body>
 </html>

@@ -18,17 +18,19 @@ if(!empty($_POST['email']))
         $sql = "SELECT * FROM user WHERE password = '".$_POST['password']."' AND email = '".$_POST['email']."'";
          $result = $conn->query($sql);
         
-         if($result == true)
+         if ($result->num_rows > 0)
          {
-
+            while($row = $result->fetch_assoc()){
                 session_start();
-                $userEmail = $_POST['email'];  
-                $_SESSION['email'] = $userEmail;
+                $userName = $row["username"];  
+                $_SESSION['username'] = $userName;
+                session_id([ $userName]);
             header("Location:index.php");
             echo '<script language="javascript">';
             echo 'alert("login succesfull")';
             echo '</script>';
             exit;
+            }
           
          }
           else{
